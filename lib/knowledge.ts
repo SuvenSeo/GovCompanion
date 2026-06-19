@@ -46,6 +46,7 @@ export type ServiceCatalogEntry = {
 export type BrowsableService = {
   id: string
   title: string
+  sinhala?: string
   category: string
   emoji: string
   detailLevel: 'full' | 'catalog'
@@ -82,6 +83,7 @@ export function getBrowsableByCategory(category: string): BrowsableService[] {
   const full: BrowsableService[] = getServicesByCategory(category).map((s) => ({
     id: s.id,
     title: s.title,
+    sinhala: s.sinhala,
     category: s.category,
     emoji: s.emoji,
     detailLevel: 'full' as const,
@@ -89,6 +91,7 @@ export function getBrowsableByCategory(category: string): BrowsableService[] {
   const catalog: BrowsableService[] = getCatalogByCategory(category).map((s) => ({
     id: s.id,
     title: s.title,
+    sinhala: s.sinhala,
     category: s.category,
     emoji: s.emoji,
     detailLevel: 'catalog' as const,
@@ -120,6 +123,7 @@ export function searchBrowsable(query: string): BrowsableService[] {
       matches.push({
         id: s.id,
         title: s.title,
+        sinhala: s.sinhala,
         category: s.category,
         emoji: s.emoji,
         detailLevel: 'full',
@@ -139,6 +143,7 @@ export function searchBrowsable(query: string): BrowsableService[] {
       matches.push({
         id: s.id,
         title: s.title,
+        sinhala: s.sinhala,
         category: s.category,
         emoji: s.emoji,
         detailLevel: 'catalog',

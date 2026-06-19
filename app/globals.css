@@ -123,6 +123,56 @@ body {
   color: #6b0f1a;
 }
 
+/* Hero batik stripe overlay */
+.hero-batik::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 12px,
+    rgba(212, 160, 23, 0.04) 12px,
+    rgba(212, 160, 23, 0.04) 24px
+  );
+  pointer-events: none;
+}
+
+/* Color-coded AI response sections */
+.md-section {
+  @apply text-sm font-bold mt-4 mb-2 px-3 py-1.5 rounded-lg border-l-4;
+}
+.md-section-docs {
+  @apply text-blue-800 bg-blue-50 border-blue-400;
+}
+.md-section-steps {
+  @apply text-green-800 bg-green-50 border-green-500;
+}
+.md-section-fees {
+  @apply text-amber-900 bg-amber-50 border-amber-400;
+}
+.md-section-tips {
+  @apply text-orange-800 bg-orange-50 border-orange-400;
+}
+.md-section-mistakes {
+  @apply text-red-800 bg-red-50 border-red-400;
+}
+.md-section-default {
+  @apply text-lk-maroon-dark bg-lk-sand/50 border-lk-maroon/30;
+}
+
+.ai-message .md-section-docs + ul,
+.ai-message .md-section-docs ~ ul:first-of-type {
+  @apply bg-blue-50/40 rounded-lg px-4 py-2 my-1;
+}
+.ai-message .md-section-steps + ol,
+.ai-message .md-section-steps ~ ol:first-of-type {
+  @apply bg-green-50/40 rounded-lg px-4 py-2 my-1;
+}
+.ai-message .md-section-mistakes + ul {
+  @apply bg-red-50/40 rounded-lg px-4 py-2 my-1;
+}
+
 @keyframes blink {
   0%,
   100% {

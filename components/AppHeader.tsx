@@ -4,6 +4,7 @@ interface AppHeaderProps {
   onQuickAsk: (query: string) => void
   onToggleSidebar?: () => void
   sidebarOpen?: boolean
+  onOpenCompare?: () => void
 }
 
 const QUICK_LINKS = [
@@ -21,7 +22,7 @@ const OFFICIAL_LINKS = [
   { label: 'dmt.gov.lk', href: 'https://dmt.gov.lk' },
 ]
 
-export default function AppHeader({ onQuickAsk, onToggleSidebar, sidebarOpen }: AppHeaderProps) {
+export default function AppHeader({ onQuickAsk, onToggleSidebar, sidebarOpen, onOpenCompare }: AppHeaderProps) {
   return (
     <header className="flex-shrink-0 shadow-lk-soft z-20">
       <div className="lk-gradient-header text-white">
@@ -95,6 +96,15 @@ export default function AppHeader({ onQuickAsk, onToggleSidebar, sidebarOpen }: 
             {label}
           </button>
         ))}
+        {onOpenCompare && (
+          <button
+            type="button"
+            onClick={onOpenCompare}
+            className="flex-shrink-0 text-[11px] font-semibold text-lk-gold-light hover:text-white bg-lk-gold/15 hover:bg-lk-gold/25 border border-lk-gold/40 px-3 py-1 rounded-full transition-all duration-200 hover:-translate-y-0.5 active:scale-95 ml-1"
+          >
+            ⚖️ Compare
+          </button>
+        )}
       </div>
     </header>
   )

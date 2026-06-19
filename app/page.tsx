@@ -3,16 +3,24 @@
 import { useRef, useState } from 'react'
 import AppHeader from '@/components/AppHeader'
 import ChatInterface, { type ChatInterfaceRef } from '@/components/ChatInterface'
+import HeroSection from '@/components/HeroSection'
+import ServiceComparison from '@/components/ServiceComparison'
 import ServiceSidebar from '@/components/ServiceSidebar'
 import TrustBar from '@/components/TrustBar'
 
 export default function Home() {
   const chatRef = useRef<ChatInterfaceRef>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [compareOpen, setCompareOpen] = useState(false)
 
   const handleSelectService = (query: string) => {
     chatRef.current?.submitMessage(query)
     setSidebarOpen(false)
+  }
+
+  const scrollToChat = () => {
+    document.getElementById('chat-input-area')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    chatRef.current?.focusInput()
   }
 
   return (
@@ -21,9 +29,12 @@ export default function Home() {
         onQuickAsk={handleSelectService}
         onToggleSidebar={() => setSidebarOpen((o) => !o)}
         sidebarOpen={sidebarOpen}
+        onOpenCompare={() => setCompareOpen(true)}
       />
 
-      <main className="flex-1 flex overflow-hidden relative">
+      <HeroSection onStartQuery={scrollToChat} />
+
+      <main className="flex-1 flex overflow-hidden relative min-h-0">
         {sidebarOpen && (
           <button
             type="button"
@@ -45,6 +56,8 @@ export default function Home() {
       </main>
 
       <TrustBar />
+
+      <ServiceComparison open={compareOpen} onClose={() => setCompareOpen(false)} />
     </div>
   )
 }

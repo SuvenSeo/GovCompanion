@@ -1,11 +1,12 @@
 'use client'
 
+import ColoredMarkdown from '@/components/ColoredMarkdown'
+import RateLimitBadge from '@/components/RateLimitBadge'
+import VerifiedSourceChip from '@/components/VerifiedSourceChip'
 import { getSessionHeaders } from '@/lib/client-session'
+import { matchServiceFromQuery } from '@/lib/matchServiceFromQuery'
 import { useChat } from 'ai/react'
 import { useCallback, useEffect, useRef, forwardRef, useImperativeHandle, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import RateLimitBadge from '@/components/RateLimitBadge'
 
 const QUICK_QUESTIONS = [
   'How do I get a new NIC?',
@@ -31,6 +32,7 @@ Tell me what you need — I'll give you the documents, office location, fees, an
 
 export interface ChatInterfaceRef {
   submitMessage: (text: string) => void
+  focusInput: () => void
 }
 
 const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
@@ -73,6 +75,9 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
       if (rateLimitError) return
       append({ role: 'user', content: text })
     },
+    focusInput: () => {
+      inputRef.current?.focus()
+    },
   }))
 
   useEffect(() => {
@@ -110,6 +115,13 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
     inputRef.current?.focus()
   }, [setMessages])
 
+  const getUserQueryBefore = (assistantIdx: number): string => {
+    for (let i = assistantIdx - 1; i >= 0; i--) {
+      if (messages[i]?.role === 'user') return messages[i].content
+    }
+    return ''
+  }
+
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
       <div className="flex items-center justify-between px-4 md:px-8 py-2 border-b border-lk-maroon/5 bg-white/40">
@@ -136,32 +148,44 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
         <div className="flex gap-3 message-enter">
           <Avatar role="assistant" />
           <div className="ai-message lk-glass rounded-2xl rounded-tl-sm px-4 py-3 shadow-lk-card max-w-2xl border-l-4 border-l-lk-gold">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{WELCOME_MESSAGE}</ReactMarkdown>
+            <ColoredMarkdown content={WELCOME_MESSAGE} />
           </div>
         </div>
 
-        {messages.map((message, idx) => (
-          <div
-            key={message.id}
-            className={`flex gap-3 message-enter ${message.role === 'user' ? 'flex-row-reverse' : ''}`}
-            style={{ animationDelay: `${Math.min(idx * 0.03, 0.15)}s` }}
-          >
-            <Avatar role={message.role} />
-            {message.role === 'user' ? (
-              <div className="bg-gradient-to-br from-lk-maroon to-lk-maroon-dark text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-md shadow-lk-soft">
-                <p className="text-sm leading-relaxed">{message.content}</p>
-              </div>
-            ) : (
-              <div
-                className={`ai-message lk-glass rounded-2xl rounded-tl-sm px-4 py-3 shadow-lk-card max-w-2xl text-sm text-gray-800 border-l-4 border-l-lk-maroon/30 ${
-                  isLoading && idx === messages.length - 1 ? 'streaming-cursor' : ''
-                }`}
-              >
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.content}</ReactMarkdown>
-              </div>
-            )}
-          </div>
-        ))}
+        {messages.map((message, idx) => {
+          const userQuery = message.role === 'assistant' ? getUserQueryBefore(idx) : ''
+          const source =
+            message.role === 'assistant' && !isLoading
+              ? matchServiceFromQuery(userQuery)
+              : null
+
+          return (
+            <div
+              key={message.id}
+              className={`flex gap-3 message-enter ${message.role === 'user' ? 'flex-row-reverse' : ''}`}
+              style={{ animationDelay: `${Math.min(idx * 0.03, 0.15)}s` }}
+            >
+              <Avatar role={message.role} />
+              {message.role === 'user' ? (
+                <div className="bg-gradient-to-br from-lk-maroon to-lk-maroon-dark text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-md shadow-lk-soft">
+                  <p className="text-sm leading-relaxed">{message.content}</p>
+                </div>
+              ) : (
+                <div
+                  className={`ai-message lk-glass rounded-2xl rounded-tl-sm px-4 py-3 shadow-lk-card max-w-2xl text-sm text-gray-800 border-l-4 border-l-lk-maroon/30 ${
+                    isLoading && idx === messages.length - 1 ? 'streaming-cursor' : ''
+                  }`}
+                >
+                  <ColoredMarkdown
+                    content={message.content}
+                    showCopyChecklist={!isLoading || idx < messages.length - 1}
+                  />
+                  {source && <VerifiedSourceChip source={source} />}
+                </div>
+              )}
+            </div>
+          )
+        })}
 
         {isLoading && messages[messages.length - 1]?.role === 'user' && (
           <div className="flex gap-3 message-enter">
@@ -202,7 +226,10 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
         </div>
       )}
 
-      <div className="border-t border-lk-maroon/10 bg-white/90 backdrop-blur-md px-4 md:px-8 py-4 shadow-[0_-4px_20px_rgba(74,11,18,0.04)]">
+      <div
+        id="chat-input-area"
+        className="border-t border-lk-maroon/10 bg-white/90 backdrop-blur-md px-4 md:px-8 py-4 shadow-[0_-4px_20px_rgba(74,11,18,0.04)]"
+      >
         <form onSubmit={handleSubmit} className="flex gap-3 items-end">
           <textarea
             ref={inputRef}

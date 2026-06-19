@@ -5,6 +5,7 @@ import {
   getBrowsableByCategory,
   getTotalServiceCount,
   searchBrowsable,
+  type BrowsableService,
 } from '@/lib/knowledge'
 import { useMemo, useState } from 'react'
 
@@ -33,6 +34,35 @@ const categoryEmojis: Record<string, string> = {
   'Utilities & Licensing': '⚡',
   'Defence & Security': '🪖',
   Agriculture: '🌾',
+}
+
+function ServiceRow({
+  svc,
+  onClick,
+  indent = false,
+}: {
+  svc: BrowsableService
+  onClick: () => void
+  indent?: boolean
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`w-full text-left ${indent ? 'px-6' : 'px-4'} py-2.5 text-xs text-white/75 hover:text-white hover:bg-white/10 transition-all duration-150 leading-snug rounded-lg mx-1 hover:translate-x-0.5 active:scale-[0.99] border-l-2 border-transparent hover:border-lk-gold/60`}
+    >
+      <span className="mr-1.5">{svc.emoji}</span>
+      <span className="block">{svc.title}</span>
+      {svc.sinhala && (
+        <span className="block font-sinhala text-[10px] text-white/35 mt-0.5 leading-snug">
+          {svc.sinhala}
+        </span>
+      )}
+      {svc.detailLevel === 'catalog' && (
+        <span className="text-white/30"> · overview</span>
+      )}
+    </button>
+  )
 }
 
 export default function ServiceSidebar({
@@ -76,7 +106,10 @@ export default function ServiceSidebar({
           රජයේ සේවා {totalCount}ක් — click to ask
         </p>
         <div className="relative">
-          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 text-xs" aria-hidden>
+          <span
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 text-xs"
+            aria-hidden
+          >
             🔍
           </span>
           <input
@@ -96,20 +129,12 @@ export default function ServiceSidebar({
             {searchResults.length === 0 ? (
               <p className="px-3 py-6 text-xs text-white/50 text-center">No services found.</p>
             ) : (
-              searchResults.map((svc, i) => (
-                <button
+              searchResults.map((svc) => (
+                <ServiceRow
                   key={svc.id}
-                  type="button"
+                  svc={svc}
                   onClick={() => handleServiceClick(svc.title)}
-                  className="w-full text-left px-4 py-2.5 text-xs text-white/75 hover:text-white hover:bg-white/10 transition-all duration-150 leading-snug rounded-lg mx-1 hover:translate-x-0.5 active:scale-[0.99]"
-                  style={{ animationDelay: `${i * 0.02}s` }}
-                >
-                  <span className="mr-1.5">{svc.emoji}</span>
-                  {svc.title}
-                  {svc.detailLevel === 'catalog' && (
-                    <span className="ml-1 text-white/30">· overview</span>
-                  )}
-                </button>
+                />
               ))
             )}
           </div>
@@ -148,17 +173,12 @@ export default function ServiceSidebar({
                 >
                   <div className="pb-1">
                     {catServices.map((svc) => (
-                      <button
+                      <ServiceRow
                         key={svc.id}
-                        type="button"
+                        svc={svc}
+                        indent
                         onClick={() => handleServiceClick(svc.title)}
-                        className="w-full text-left px-6 py-2 text-xs text-white/65 hover:text-white hover:bg-lk-gold/10 transition-all duration-150 leading-snug border-l-2 border-transparent hover:border-lk-gold/60"
-                      >
-                        {svc.title}
-                        {svc.detailLevel === 'catalog' && (
-                          <span className="text-white/25"> · overview</span>
-                        )}
-                      </button>
+                      />
                     ))}
                   </div>
                 </div>
