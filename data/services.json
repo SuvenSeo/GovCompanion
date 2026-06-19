@@ -100,46 +100,52 @@
     "description": "Apply for your first Sri Lankan passport. Valid for 10 years for adults, 5 years for children under 16.",
     "department": "Department of Immigration and Emigration",
     "offices": [
-      { "name": "Head Office", "address": "41, Ananda Rajakaruna Mawatha, Colombo 10", "phone": "+94 11 2595101" },
-      { "name": "Regional Office — Kandy", "address": "District Secretariat, DS Senanayake Veediya, Kandy", "phone": "+94 81 2222500" },
-      { "name": "Regional Office — Galle", "address": "Kachcheri Complex, Galle", "phone": "+94 91 2232030" }
+      { "name": "Head Office — Suhurupaya", "address": "\"Suhurupaya\", Sri Subhuthipura Road, Battaramulla", "phone": "1962 / +94 11 210 1500" },
+      { "name": "Regional Office — Kandy", "address": "Kandy (verify address at immigration.gov.lk)", "phone": "Contact 1962" },
+      { "name": "Regional Office — Matara", "address": "Matara (verify address at immigration.gov.lk)", "phone": "Contact 1962" },
+      { "name": "Regional Office — Kurunegala", "address": "Kurunegala (verify address at immigration.gov.lk)", "phone": "Contact 1962" },
+      { "name": "Regional Office — Vavuniya", "address": "Vavuniya (verify address at immigration.gov.lk)", "phone": "Contact 1962" },
+      { "name": "Regional Office — Jaffna", "address": "Jaffna (verify address at immigration.gov.lk)", "phone": "Contact 1962" }
     ],
     "documents_required": [
-      "National Identity Card (NIC) — original and photocopy",
+      "National Identity Card (NIC) — original (must attend in person)",
       "Birth Certificate — original and photocopy",
-      "Two recent passport-size photographs (35mm × 45mm, plain white background)",
-      "Completed application form (downloadable from immigration.gov.lk)",
-      "Bank of Ceylon payment receipt for the applicable fee",
-      "Marriage Certificate (for married women applying in married name)",
-      "Parent's NIC + Birth Certificate + Marriage Certificate (for children under 16)"
+      "Digital photograph from an authorized photo studio (printed photos are NOT accepted since August 2015)",
+      "Completed passport application form (K35A) — from immigration.gov.lk, Department, Regional Offices, or Divisional Secretariat",
+      "Government fee payment receipt from the Department cashier",
+      "Marriage Certificate (if applying in married name)",
+      "Parent's NIC + child's Birth Certificate (for applicants under 16)"
     ],
     "steps": [
-      "Book an appointment online at immigration.gov.lk — walk-ins are almost never accepted",
-      "Pay the applicable fee at any Bank of Ceylon branch using the appointment reference number",
-      "On appointment day, arrive 30 minutes early with all documents",
-      "Submit documents at the counter — biometrics (photo + fingerprints) are captured on-site",
-      "Collect your passport on the specified collection date (or request postal delivery)"
+      "Obtain your digital photograph from an authorized photo studio listed on immigration.gov.lk",
+      "Download Form K35A and complete it — available at immigration.gov.lk, Head Office, Regional Offices, or Divisional Secretariats",
+      "Pay the applicable government fee at the Department of Immigration and Emigration cashier (Normal or One-Day service)",
+      "Attend Head Office (Battaramulla), a Regional Office, or eligible Divisional Secretariat in person — fingerprints are captured on-site",
+      "For Normal service: collect passport after processing (approximately 30 working days for adults)",
+      "For One-Day urgent service: only available at Head Office Battaramulla and Jaffna Regional Office — submit before cutoff time on weekdays"
     ],
     "fees": {
-      "32_page_10_years": "LKR 3,500",
-      "64_page_10_years": "LKR 7,000",
-      "tatkal_urgent_3_days": "LKR 15,000+"
+      "adult_normal_10_years": "LKR 10,000",
+      "adult_one_day_urgent": "LKR 20,000",
+      "child_under_16_normal": "LKR 3,000 (3-year or 10-year validity per parents' request)",
+      "child_under_16_one_day": "LKR 9,000"
     },
-    "processing_time": "7–10 working days (standard), 2–3 working days (Tatkal)",
+    "processing_time": "Normal: ~30 working days (adults). One-Day urgent: same day (Head Office Battaramulla or Jaffna only, weekday cutoff applies)",
     "online_available": true,
     "online_url": "https://www.immigration.gov.lk",
+    "source_url": "https://www.immigration.gov.lk/pages_e.php?id=8",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Book your appointment weeks in advance — slots fill up fast",
-      "Pay the Bank of Ceylon fee before your appointment, not on the day",
-      "The 64-page passport is recommended if you travel frequently — more visa pages",
-      "Photos must be taken at a professional studio — home prints are usually rejected",
-      "Many countries require 6 months validity remaining — renew early if travelling"
+      "Head Office moved from Colombo 10 to Suhurupaya, Battaramulla — do NOT go to the old Ananda Rajakaruna Mawatha address",
+      "One-Day (urgent) service is ONLY at Battaramulla Head Office and Jaffna Regional Office — other regional offices are Normal service only",
+      "You must appear in person for fingerprint capture — no walk-in without completing the application process",
+      "Call 1962 or check immigration.gov.lk before visiting — fees and cutoff times can change by gazette"
     ],
     "common_mistakes": [
-      "Trying to walk in without an appointment — you will be turned away",
-      "Forgetting to bring the Bank of Ceylon payment receipt",
-      "Photos with shadows, glasses, or coloured backgrounds — rejected on the spot",
-      "Bringing an expired NIC as your identification document"
+      "Going to the old Colombo 10 office address — the Head Office is now in Battaramulla",
+      "Bringing printed photographs instead of using an authorized digital photo studio",
+      "Expecting one-day service at Kandy/Matara/Kurunegala — urgent service is Battaramulla and Jaffna only",
+      "Using outdated fee amounts (current adult fees are LKR 10,000 normal / LKR 20,000 one-day, not LKR 3,500)"
     ]
   },
   {
@@ -148,41 +154,49 @@
     "sinhala": "විදේශ ගමන් බලපත්‍රය — අලුත් කිරීම",
     "category": "Travel",
     "emoji": "🛂",
-    "description": "Renew an expiring or expired Sri Lankan passport. You can renew up to 12 months before expiry.",
+    "description": "Renew an expiring or expired Sri Lankan passport. Same fees as a new application. Adults receive 10-year validity; children under 16 may receive 3-year or 10-year validity.",
     "department": "Department of Immigration and Emigration",
     "offices": [
-      { "name": "Head Office", "address": "41, Ananda Rajakaruna Mawatha, Colombo 10", "phone": "+94 11 2595101" }
+      { "name": "Head Office — Suhurupaya", "address": "\"Suhurupaya\", Sri Subhuthipura Road, Battaramulla", "phone": "1962 / +94 11 210 1500" },
+      { "name": "Regional Offices", "address": "Kandy, Matara, Kurunegala, Vavuniya, Jaffna — verify at immigration.gov.lk", "phone": "1962" }
     ],
     "documents_required": [
-      "Current/old passport — original (will be returned cancelled)",
-      "National Identity Card (NIC) — original and photocopy",
-      "Two recent passport-size photographs (35mm × 45mm, white background)",
-      "Completed renewal application form",
-      "Bank of Ceylon payment receipt for renewal fee"
+      "Current or expired passport — original (returned cancelled after renewal)",
+      "National Identity Card (NIC) — original (must attend in person for fingerprints)",
+      "Digital photograph from an authorized photo studio (printed photos NOT accepted)",
+      "Completed passport application form (K35A) for renewal",
+      "Government fee payment receipt from the Department cashier"
     ],
     "steps": [
-      "Book an appointment at immigration.gov.lk",
-      "Pay the renewal fee at any Bank of Ceylon branch",
-      "Attend the appointment with old passport and all documents",
-      "Biometrics are re-captured — bring your original NIC",
-      "Collect new passport on the specified date — your old passport is returned cancelled"
+      "Obtain digital photograph from an authorized photo studio on immigration.gov.lk",
+      "Complete Form K35A — same form used for new applications and renewals",
+      "Pay renewal fee at the Department cashier: LKR 10,000 (Normal) or LKR 20,000 (One-Day urgent)",
+      "Attend Head Office Battaramulla, a Regional Office, or eligible Divisional Secretariat in person with old passport and NIC",
+      "Biometrics (fingerprints) captured on-site — applicant must be present",
+      "Collect new passport on the issued date; old passport returned cancelled"
     ],
     "fees": {
-      "32_page": "LKR 3,500",
-      "64_page": "LKR 7,000",
-      "tatkal": "LKR 15,000+"
+      "adult_normal": "LKR 10,000",
+      "adult_one_day_urgent": "LKR 20,000",
+      "child_under_16_normal": "LKR 3,000",
+      "child_under_16_one_day": "LKR 9,000"
     },
-    "processing_time": "7–10 working days (standard), 2–3 working days (Tatkal)",
+    "processing_time": "Normal: ~30 working days. One-Day urgent: same day at Battaramulla Head Office or Jaffna only",
     "online_available": true,
     "online_url": "https://www.immigration.gov.lk",
+    "source_url": "https://www.immigration.gov.lk/pages_e.php?id=8",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Start renewal 3–6 months before expiry — don't wait until the last month",
-      "Valid visas in your old passport remain valid — they're noted and transferred",
-      "Keep your cancelled old passport safe — it serves as proof of prior travel history"
+      "Renewal fees are the same as new passport fees — LKR 10,000 normal, LKR 20,000 one-day for adults",
+      "Expired passports can still be renewed — there is no time limit on renewal eligibility",
+      "One-day service only at Battaramulla and Jaffna — plan ahead if travelling soon",
+      "Valid visas in the old passport remain valid after renewal — they are noted on the new passport"
     ],
     "common_mistakes": [
-      "Waiting until days before an international trip — Tatkal is expensive and stressful",
-      "Not realising expired passports can still be renewed (no time limit)"
+      "Using outdated Colombo 10 address — Head Office is at Suhurupaya, Battaramulla",
+      "Quoting old fees (LKR 3,500/7,000) — current adult fees are LKR 10,000 and LKR 20,000",
+      "Bringing printed photos — only authorized digital studio photos are accepted",
+      "Expecting urgent same-day service outside Battaramulla or Jaffna"
     ]
   },
   {

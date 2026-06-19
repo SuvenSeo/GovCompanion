@@ -1,0 +1,1587 @@
+[
+  {
+    "id": "ugc-university-admission",
+    "title": "University Admission (UGC)",
+    "sinhala": "විශ්වවිද්‍යාල ඇතුළත් වීම",
+    "category": "Education",
+    "emoji": "🎓",
+    "department": "University Grants Commission",
+    "summary": "Apply for state university placement after A/L via UGC online system.",
+    "official_url": "https://www.ugc.ac.lk",
+    "online_available": true,
+    "keywords": [
+      "university",
+      "ugc",
+      "a/l",
+      "z-score",
+      "admission"
+    ]
+  },
+  {
+    "id": "exam-dept-ol-al",
+    "title": "O/L & A/L Exam Registration",
+    "sinhala": "සාමාන්‍ය පෙළ / අධ්‍යාපන පෙළ ලියාපදිංචිය",
+    "category": "Education",
+    "emoji": "📝",
+    "department": "Department of Examinations",
+    "summary": "Register for GCE Ordinary and Advanced Level examinations.",
+    "official_url": "https://www.doenets.lk",
+    "online_available": true,
+    "keywords": [
+      "o/l",
+      "a/l",
+      "gce",
+      "exam",
+      "examinations"
+    ]
+  },
+  {
+    "id": "gce-certificate-request",
+    "title": "GCE Certificate / Result Request",
+    "sinhala": "ප්‍රමාණපත්‍ර ඉල්ලීම",
+    "category": "Education",
+    "emoji": "📜",
+    "department": "Department of Examinations",
+    "summary": "Request certified copies of O/L, A/L results and certificates.",
+    "official_url": "https://www.doenets.lk",
+    "online_available": true,
+    "keywords": [
+      "certificate",
+      "results",
+      "gce",
+      "transcript"
+    ]
+  },
+  {
+    "id": "school-transfer",
+    "title": "School Transfer (Grade 1–11)",
+    "sinhala": "පාසල් මාරුව",
+    "category": "Education",
+    "emoji": "🏫",
+    "department": "Provincial Education Department",
+    "summary": "Transfer a student between government schools within rules and quotas.",
+    "official_url": "https://www.moe.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "school",
+      "transfer",
+      "student",
+      "grade"
+    ]
+  },
+  {
+    "id": "scholarship-presidents",
+    "title": "President's Scholarship Scheme",
+    "sinhala": "ජනාධිපති උපබ්‍රති",
+    "category": "Education",
+    "emoji": "🏅",
+    "department": "Ministry of Education",
+    "summary": "Merit scholarships for top A/L performers entering university.",
+    "official_url": "https://www.moe.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "scholarship",
+      "president",
+      "a/l",
+      "merit"
+    ]
+  },
+  {
+    "id": "tvec-enrollment",
+    "title": "TVEC Vocational Training Enrollment",
+    "sinhala": "වෘත්තීය පුහුණු ලියාපදිංචිය",
+    "category": "Education",
+    "emoji": "🔧",
+    "department": "Tertiary & Vocational Education Commission",
+    "summary": "Enroll in NVQ vocational courses at recognized training institutes.",
+    "official_url": "https://www.tvec.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "tvec",
+      "nvq",
+      "vocational",
+      "training",
+      "course"
+    ]
+  },
+  {
+    "id": "naita-equivalency",
+    "title": "Degree Equivalency (NAITA)",
+    "sinhala": "උපාධි සමතුලතාව",
+    "category": "Education",
+    "emoji": "🌍",
+    "department": "NAITA / UGC",
+    "summary": "Validate foreign degrees for employment and further study in Sri Lanka.",
+    "official_url": "https://www.ugc.ac.lk",
+    "online_available": false,
+    "keywords": [
+      "foreign degree",
+      "equivalency",
+      "naita",
+      "recognition"
+    ]
+  },
+  {
+    "id": "teacher-registration",
+    "title": "Teacher Service Registration",
+    "sinhala": "ගුරු සේවා ලියාපදිංචිය",
+    "category": "Education",
+    "emoji": "👩‍🏫",
+    "department": "Ministry of Education",
+    "summary": "Register trained teachers for government school appointments.",
+    "official_url": "https://www.moe.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "teacher",
+      "education",
+      "appointment",
+      "training"
+    ]
+  },
+  {
+    "id": "pirivena-registration",
+    "title": "Pirivena / Religious School Registration",
+    "sinhala": "පිරිවෙන ලියාපදිංචිය",
+    "category": "Education",
+    "emoji": "🛕",
+    "department": "Department of Buddhist Affairs",
+    "summary": "Register pirivena institutions and religious education programmes.",
+    "official_url": "https://www.buddhistdept.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "pirivena",
+      "buddhist",
+      "religious",
+      "school"
+    ]
+  },
+  {
+    "id": "open-university-enrollment",
+    "title": "Open University Enrollment",
+    "sinhala": "විවෘත විශ්වවිද්‍යාලය ඇතුළත් වීම",
+    "category": "Education",
+    "emoji": "📚",
+    "department": "Open University of Sri Lanka",
+    "summary": "Apply for distance-learning degree and diploma programmes.",
+    "official_url": "https://www.ou.ac.lk",
+    "online_available": true,
+    "keywords": [
+      "open university",
+      "ousl",
+      "distance",
+      "degree"
+    ]
+  },
+  {
+    "id": "slmc-doctor-registration",
+    "title": "Medical Council Doctor Registration",
+    "sinhala": "වෛද්‍ය ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "⚕️",
+    "department": "Sri Lanka Medical Council",
+    "summary": "Register to practise medicine in Sri Lanka (local or foreign graduates).",
+    "official_url": "https://www.srilankamedicalcouncil.org",
+    "online_available": true,
+    "keywords": [
+      "doctor",
+      "slmc",
+      "medical",
+      "registration",
+      "mbbs"
+    ]
+  },
+  {
+    "id": "nmra-drug-registration",
+    "title": "Medicine / Drug Registration (NMRA)",
+    "sinhala": "ඖෂධ ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "💊",
+    "department": "National Medicines Regulatory Authority",
+    "summary": "Register pharmaceuticals and medical devices for sale in Sri Lanka.",
+    "official_url": "https://www.nmra.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "medicine",
+      "drug",
+      "nmra",
+      "pharmaceutical"
+    ]
+  },
+  {
+    "id": "hospital-patient-registration",
+    "title": "Government Hospital Patient Registration",
+    "sinhala": "රෝහල් ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "🏥",
+    "department": "Ministry of Health",
+    "summary": "Register as a patient at government hospitals using NIC for OPD and clinics.",
+    "official_url": "https://www.health.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "hospital",
+      "patient",
+      "opd",
+      "clinic",
+      "health"
+    ]
+  },
+  {
+    "id": "ehis-health-insurance",
+    "title": "Employee Health Insurance (eHIS)",
+    "sinhala": "සෞඛ්‍ය රක්ෂණය",
+    "category": "Health",
+    "emoji": "🩺",
+    "department": "Ministry of Health",
+    "summary": "State health insurance scheme information and enrollment for eligible groups.",
+    "official_url": "https://www.health.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "health insurance",
+      "ehis",
+      "medical cover"
+    ]
+  },
+  {
+    "id": "ayurveda-registration",
+    "title": "Ayurveda Practitioner Registration",
+    "sinhala": "ආයුර්වේද ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "🌿",
+    "department": "Department of Ayurveda",
+    "summary": "Register ayurvedic doctors and ayurveda treatment centres.",
+    "official_url": "https://www.ayurveda.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "ayurveda",
+      "traditional medicine",
+      "practitioner"
+    ]
+  },
+  {
+    "id": "food-control-license",
+    "title": "Food Business License (MC / PHI)",
+    "sinhala": "ආහාර ව්‍යාපාර බලපත්‍රය",
+    "category": "Health",
+    "emoji": "🍽️",
+    "department": "Municipal Council / PHI",
+    "summary": "Health license for restaurants, food manufacturing and sale premises.",
+    "official_url": "https://www.health.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "food",
+      "license",
+      "restaurant",
+      "phi",
+      "health"
+    ]
+  },
+  {
+    "id": "birth-defect-registry",
+    "title": "Birth Defect / Congenital Disorder Registry",
+    "sinhala": "උපතින් ඇතිවන රෝග ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "👶",
+    "department": "Family Health Bureau",
+    "summary": "Register congenital conditions for follow-up care programmes.",
+    "official_url": "https://www.familyhealth.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "birth defect",
+      "congenital",
+      "registry",
+      "newborn"
+    ]
+  },
+  {
+    "id": "mental-health-services",
+    "title": "Government Mental Health Services",
+    "sinhala": "මානසික සෞඛ්‍ය සේවා",
+    "category": "Health",
+    "emoji": "🧠",
+    "department": "Ministry of Health",
+    "summary": "Access psychiatric care at teaching and district hospitals island-wide.",
+    "official_url": "https://www.health.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "mental health",
+      "psychiatry",
+      "counselling"
+    ]
+  },
+  {
+    "id": "dental-council-registration",
+    "title": "Dental Council Registration",
+    "sinhala": "දන්ත වෛද්‍ය ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "🦷",
+    "department": "Sri Lanka Dental Council",
+    "summary": "Register dentists to practise in Sri Lanka.",
+    "official_url": "https://www.sldc.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "dentist",
+      "dental",
+      "registration"
+    ]
+  },
+  {
+    "id": "nursing-council-registration",
+    "title": "Nursing Council Registration",
+    "sinhala": "සෙව්කාරී ලියාපදිංචිය",
+    "category": "Health",
+    "emoji": "👩‍⚕️",
+    "department": "Sri Lanka Nursing Council",
+    "summary": "Register nurses and midwives for professional practice.",
+    "official_url": "https://www.srilankanursingcouncil.org",
+    "online_available": false,
+    "keywords": [
+      "nurse",
+      "nursing",
+      "midwife",
+      "registration"
+    ]
+  },
+  {
+    "id": "boi-registration",
+    "title": "BOI Investment Registration",
+    "sinhala": "නිදසුන් ආයෝජන ලියාපදිංචිය",
+    "category": "Business & Trade",
+    "emoji": "🏭",
+    "department": "Board of Investment",
+    "summary": "Register export-oriented and priority sector investments for BOI incentives.",
+    "official_url": "https://www.investsrilanka.com",
+    "online_available": true,
+    "keywords": [
+      "boi",
+      "investment",
+      "export",
+      "factory"
+    ]
+  },
+  {
+    "id": "import-license-customs",
+    "title": "Import License & Customs Clearance",
+    "sinhala": "ආනයන බලපත්‍ර / රේගු නිෂ්කාශනය",
+    "category": "Business & Trade",
+    "emoji": "📦",
+    "department": "Sri Lanka Customs / Import Controller",
+    "summary": "Obtain import permits and clear goods through customs.",
+    "official_url": "https://www.customs.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "import",
+      "customs",
+      "clearance",
+      "permit",
+      "cargo"
+    ]
+  },
+  {
+    "id": "export-registration-edb",
+    "title": "Exporter Registration (EDB)",
+    "sinhala": "අපනයනකරු ලියාපදිංචිය",
+    "category": "Business & Trade",
+    "emoji": "🚢",
+    "department": "Export Development Board",
+    "summary": "Register as an exporter and access EDB export facilitation services.",
+    "official_url": "https://www.srilankabusiness.com",
+    "online_available": true,
+    "keywords": [
+      "export",
+      "edb",
+      "exporter",
+      "trade"
+    ]
+  },
+  {
+    "id": "trade-license-mc",
+    "title": "Municipal Trade License",
+    "sinhala": "වාණිජ බලපත්‍රය",
+    "category": "Business & Trade",
+    "emoji": "🏪",
+    "department": "Municipal / Urban Council",
+    "summary": "Annual trade license for shops and commercial premises in local authority areas.",
+    "official_url": "https://www.lg.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "trade license",
+      "shop",
+      "municipal",
+      "business permit"
+    ]
+  },
+  {
+    "id": "nbt-registration",
+    "title": "Nation Building Tax (NBT) Registration",
+    "sinhala": "ජාතික නිර්මාණ බදු ලියාපදිංචිය",
+    "category": "Business & Trade",
+    "emoji": "🧾",
+    "department": "Inland Revenue Department",
+    "summary": "Register liable businesses for NBT where applicable.",
+    "official_url": "https://www.ird.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "nbt",
+      "tax",
+      "business",
+      "registration"
+    ]
+  },
+  {
+    "id": "vat-registration",
+    "title": "VAT Registration",
+    "sinhala": "VAT ලියාපදිංචිය",
+    "category": "Tax & Revenue",
+    "emoji": "💳",
+    "department": "Inland Revenue Department",
+    "summary": "Register for Value Added Tax when turnover exceeds statutory threshold.",
+    "official_url": "https://www.ird.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "vat",
+      "tax",
+      "ird",
+      "registration"
+    ]
+  },
+  {
+    "id": "svat-scheme",
+    "title": "SVAT Scheme Registration",
+    "sinhala": "SVAT ලියාපදිංචිය",
+    "category": "Tax & Revenue",
+    "emoji": "📊",
+    "department": "Inland Revenue Department",
+    "summary": "Suspended VAT scheme for eligible exporters and suppliers.",
+    "official_url": "https://www.ird.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "svat",
+      "vat",
+      "export",
+      "suspended"
+    ]
+  },
+  {
+    "id": "paye-registration",
+    "title": "PAYE Tax Registration (Employer)",
+    "sinhala": "PAYE බදු ලියාපදිංචිය",
+    "category": "Tax & Revenue",
+    "emoji": "👔",
+    "department": "Inland Revenue Department",
+    "summary": "Employers register and deduct PAYE from employee salaries.",
+    "official_url": "https://www.ird.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "paye",
+      "employer",
+      "salary tax",
+      "withholding"
+    ]
+  },
+  {
+    "id": "stamp-duty-payment",
+    "title": "Stamp Duty Payment",
+    "sinhala": "මුද්දර බදු ගෙවීම",
+    "category": "Tax & Revenue",
+    "emoji": "📃",
+    "department": "Inland Revenue / Designated Banks",
+    "summary": "Pay stamp duty on deeds, agreements and instruments before registration.",
+    "official_url": "https://www.ird.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "stamp duty",
+      "deed",
+      "agreement",
+      "notary"
+    ]
+  },
+  {
+    "id": "slsi-certification",
+    "title": "SLSI Product Certification",
+    "sinhala": "SLSI සම්මත සහතිකය",
+    "category": "Business & Trade",
+    "emoji": "✅",
+    "department": "Sri Lanka Standards Institution",
+    "summary": "Obtain SLS mark and standards compliance certification for products.",
+    "official_url": "https://www.slsi.lk",
+    "online_available": false,
+    "keywords": [
+      "slsi",
+      "standards",
+      "certification",
+      "quality"
+    ]
+  },
+  {
+    "id": "tourism-license-sltda",
+    "title": "Tourism Business License",
+    "sinhala": "චාරිකා ව්‍යාපාර බලපත්‍රය",
+    "category": "Business & Trade",
+    "emoji": "🏨",
+    "department": "Sri Lanka Tourism Development Authority",
+    "summary": "License hotels, guesthouses, travel agencies and tour operators.",
+    "official_url": "https://www.sltda.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "tourism",
+      "hotel",
+      "travel agency",
+      "sltda"
+    ]
+  },
+  {
+    "id": "liquor-license-excise",
+    "title": "Liquor License (Excise)",
+    "sinhala": "මද්‍ය බලපත්‍රය",
+    "category": "Business & Trade",
+    "emoji": "🍷",
+    "department": "Excise Department",
+    "summary": "Apply for manufacture, sale or serving of liquor licenses.",
+    "official_url": "https://www.excise.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "liquor",
+      "alcohol",
+      "excise",
+      "license",
+      "bar"
+    ]
+  },
+  {
+    "id": "sec-stock-broker",
+    "title": "SEC / Stock Market Registration",
+    "sinhala": "මූල්‍ය වෙළඳපොළ ලියාපදිංචිය",
+    "category": "Business & Trade",
+    "emoji": "📈",
+    "department": "Securities & Exchange Commission",
+    "summary": "Register brokers, dealers and listed company disclosures with SEC/CSE.",
+    "official_url": "https://www.sec.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "sec",
+      "stock",
+      "cse",
+      "shares",
+      "broker"
+    ]
+  },
+  {
+    "id": "halal-certification",
+    "title": "Halal Certification",
+    "sinhala": "හලාල් සහතිකය",
+    "category": "Business & Trade",
+    "emoji": "☪️",
+    "department": "ACJU Halal Certification",
+    "summary": "Certify food and products for halal compliance for export and local sale.",
+    "official_url": "https://www.halal.lk",
+    "online_available": false,
+    "keywords": [
+      "halal",
+      "certification",
+      "food",
+      "export"
+    ]
+  },
+  {
+    "id": "brand-trademark",
+    "title": "Trademark / Brand Registration",
+    "sinhala": "වෙළඳ ලකුණු ලියාපදිංචිය",
+    "category": "Business & Trade",
+    "emoji": "™️",
+    "department": "National Intellectual Property Office",
+    "summary": "Register trademarks and intellectual property rights in Sri Lanka.",
+    "official_url": "https://www.nipo.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "trademark",
+      "brand",
+      "nipo",
+      "intellectual property"
+    ]
+  },
+  {
+    "id": "cadastral-survey",
+    "title": "Cadastral Survey (Survey Department)",
+    "sinhala": "සර්වේක්ෂණ සැලසුම",
+    "category": "Land & Property",
+    "emoji": "📐",
+    "department": "Survey Department",
+    "summary": "Obtain approved survey plans for land subdivision and registration.",
+    "official_url": "https://www.survey.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "survey",
+      "cadastral",
+      "land plan",
+      "subdivision"
+    ]
+  },
+  {
+    "id": "land-use-permit",
+    "title": "Land Use / Development Permit",
+    "sinhala": "ඉඩම් භාවිත බලපත්‍රය",
+    "category": "Land & Property",
+    "emoji": "🏗️",
+    "department": "Local Authority / UDA",
+    "summary": "Permit for construction and change of land use in urban and local council areas.",
+    "official_url": "https://www.uda.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "building permit",
+      "construction",
+      "land use",
+      "uda"
+    ]
+  },
+  {
+    "id": "condominium-registration",
+    "title": "Condominium Property Registration",
+    "sinhala": "කොන්ඩොමිනියම් ලියාපදිංචිය",
+    "category": "Land & Property",
+    "emoji": "🏢",
+    "department": "Condominium Management Authority",
+    "summary": "Register condominium developments and unit titles.",
+    "official_url": "https://www.condominium.lk",
+    "online_available": false,
+    "keywords": [
+      "condominium",
+      "apartment",
+      "flat",
+      "strata"
+    ]
+  },
+  {
+    "id": "partition-deed",
+    "title": "Land Partition / Settlement",
+    "sinhala": "ඉඩම් බෙදීම",
+    "category": "Land & Property",
+    "emoji": "🗺️",
+    "department": "Land Commissioner / Courts",
+    "summary": "Legally partition inherited land among heirs via deed or court order.",
+    "official_url": "https://www.land.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "partition",
+      "inheritance",
+      "land split",
+      "deed"
+    ]
+  },
+  {
+    "id": "valuation-department",
+    "title": "Government Valuation Report",
+    "sinhala": "ඇගයීම් වාර්තාව",
+    "category": "Land & Property",
+    "emoji": "💰",
+    "department": "Department of Valuation",
+    "summary": "Official property valuation for court, tax and transaction purposes.",
+    "official_url": "https://www.valuation.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "valuation",
+      "property value",
+      "assessment"
+    ]
+  },
+  {
+    "id": "samurdhi-benefits",
+    "title": "Samurdhi Welfare Benefits",
+    "sinhala": "සමෘද්ධි ප්‍රතිලාභ",
+    "category": "Welfare & Social",
+    "emoji": "🤲",
+    "department": "Department of Samurdhi",
+    "summary": "Food stamp style welfare for eligible low-income families (legacy programme transitioning to Aswesuma).",
+    "official_url": "https://www.samurdhi.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "samurdhi",
+      "welfare",
+      "poverty",
+      "benefits"
+    ]
+  },
+  {
+    "id": "elderly-allowance",
+    "title": "Elderly Persons Allowance",
+    "sinhala": "වැඩිහිටි දීමනාව",
+    "category": "Welfare & Social",
+    "emoji": "👴",
+    "department": "Department of Social Services",
+    "summary": "Monthly allowance for eligible citizens aged 70+.",
+    "official_url": "https://www.socialservices.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "elderly",
+      "pension",
+      "allowance",
+      "senior"
+    ]
+  },
+  {
+    "id": "disability-assistance",
+    "title": "Disability Assistance Programme",
+    "sinhala": "ආබාධිත සහනාධාර",
+    "category": "Welfare & Social",
+    "emoji": "♿",
+    "department": "Department of Social Services",
+    "summary": "Financial and rehabilitation support for persons with disabilities.",
+    "official_url": "https://www.socialservices.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "disability",
+      "handicap",
+      "assistance",
+      "wheelchair"
+    ]
+  },
+  {
+    "id": "kidney-patient-allowance",
+    "title": "Kidney Patient Allowance",
+    "sinhala": "වකුගඩු රෝගී දීමනාව",
+    "category": "Welfare & Social",
+    "emoji": "🩸",
+    "department": "Ministry of Social Empowerment",
+    "summary": "Monthly allowance for chronic kidney disease patients meeting criteria.",
+    "official_url": "https://www.socialservices.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "kidney",
+      "ckdu",
+      "dialysis",
+      "allowance"
+    ]
+  },
+  {
+    "id": "fertilizer-subsidy",
+    "title": "Farmer Fertilizer Subsidy",
+    "sinhala": "පොහොර සහනාධාර",
+    "category": "Welfare & Social",
+    "emoji": "🌾",
+    "department": "Ministry of Agriculture",
+    "summary": "Subsidized fertilizer allocation for registered farmers via agriculture offices.",
+    "official_url": "https://www.agrimin.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "fertilizer",
+      "farmer",
+      "subsidy",
+      "agriculture"
+    ]
+  },
+  {
+    "id": "farmers-pension",
+    "title": "Farmers' Pension & Insurance",
+    "sinhala": "ගොවි පෙන්ෂන්",
+    "category": "Welfare & Social",
+    "emoji": "🚜",
+    "department": "Agricultural and Agrarian Insurance Board",
+    "summary": "Pension and insurance scheme for registered farmers.",
+    "official_url": "https://www.agrimin.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "farmer pension",
+      "agriculture",
+      "insurance"
+    ]
+  },
+  {
+    "id": "ranaviru-pension",
+    "title": "Ranaviru (War Hero) Pension & Benefits",
+    "sinhala": "රණවිරු ප්‍රතිලාභ",
+    "category": "Welfare & Social",
+    "emoji": "🎖️",
+    "department": "Ministry of Defence / Ranaviru Seva Authority",
+    "summary": "Pensions and benefits for armed forces veterans and dependents.",
+    "official_url": "https://www.defence.lk",
+    "online_available": false,
+    "keywords": [
+      "ranaviru",
+      "military",
+      "veteran",
+      "pension",
+      "army"
+    ]
+  },
+  {
+    "id": "widows-orphans-pension",
+    "title": "Widows & Orphans Pension",
+    "sinhala": "වැන්දඹු / අනාථ දීමනා",
+    "category": "Welfare & Social",
+    "emoji": "💔",
+    "department": "Department of Pensions",
+    "summary": "Pension benefits for widows and orphans of deceased public servants and eligible groups.",
+    "official_url": "https://www.pensions.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "widow",
+      "orphan",
+      "pension",
+      "death benefit"
+    ]
+  },
+  {
+    "id": "epf-employer-registration",
+    "title": "EPF Employer Registration",
+    "sinhala": "EPF සේවායෝජක ලියාපදිංචිය",
+    "category": "Employment & Labour",
+    "emoji": "💼",
+    "department": "Employees Provident Fund",
+    "summary": "Employers must register and remit monthly EPF contributions for staff.",
+    "official_url": "https://www.epf.lk",
+    "online_available": true,
+    "keywords": [
+      "epf",
+      "employer",
+      "provident fund",
+      "pension"
+    ]
+  },
+  {
+    "id": "epf-member-claim",
+    "title": "EPF Member Withdrawal / Claim",
+    "sinhala": "EPF මුදල් ඉල්ලීම",
+    "category": "Employment & Labour",
+    "emoji": "🏦",
+    "department": "Employees Provident Fund",
+    "summary": "Members claim EPF balances on retirement, migration or eligible grounds.",
+    "official_url": "https://www.epf.lk",
+    "online_available": true,
+    "keywords": [
+      "epf",
+      "withdrawal",
+      "claim",
+      "retirement",
+      "provident"
+    ]
+  },
+  {
+    "id": "etf-employer",
+    "title": "ETF Employer Registration",
+    "sinhala": "ETF ලියාපදිංචිය",
+    "category": "Employment & Labour",
+    "emoji": "📋",
+    "department": "Employees Trust Fund Board",
+    "summary": "Register and pay ETF — 3% of employee total emoluments.",
+    "official_url": "https://www.etfb.lk",
+    "online_available": true,
+    "keywords": [
+      "etf",
+      "employer",
+      "trust fund"
+    ]
+  },
+  {
+    "id": "foreign-employment-slbf",
+    "title": "Foreign Employment Registration (SLBFE)",
+    "sinhala": "විදේශගත වැඩ ලියාපදිංචිය",
+    "category": "Employment & Labour",
+    "emoji": "✈️",
+    "department": "Sri Lanka Bureau of Foreign Employment",
+    "summary": "Mandatory registration and departure clearance for migrant workers.",
+    "official_url": "https://www.slbfe.lk",
+    "online_available": true,
+    "keywords": [
+      "foreign employment",
+      "slbfe",
+      "migrant",
+      "overseas job",
+      "manpower"
+    ]
+  },
+  {
+    "id": "work-permit-foreign",
+    "title": "Work Permit (Foreign Nationals)",
+    "sinhala": "විදේශික වැඩ බලපත්‍රය",
+    "category": "Employment & Labour",
+    "emoji": "🌐",
+    "department": "Department of Immigration / BOI",
+    "summary": "Work visas and permits for foreign nationals employed in Sri Lanka.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "work permit",
+      "foreign worker",
+      "expat",
+      "visa work"
+    ]
+  },
+  {
+    "id": "labour-dispute-commission",
+    "title": "Labour Dispute Filing",
+    "sinhala": "ශ්‍රම ආරවුල් පැමිණිල්ල",
+    "category": "Employment & Labour",
+    "emoji": "⚖️",
+    "department": "Labour Department / Labour Tribunal",
+    "summary": "File unfair dismissal and wage disputes at Labour Department or Tribunal.",
+    "official_url": "https://www.labourdept.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "labour",
+      "dispute",
+      "dismissal",
+      "wages",
+      "tribunal"
+    ]
+  },
+  {
+    "id": "jobseeker-registration",
+    "title": "Job Seeker Registration",
+    "sinhala": "රැකියා අපේක්ෂක ලියාපදිංචිය",
+    "category": "Employment & Labour",
+    "emoji": "🔍",
+    "department": "Department of Manpower & Employment",
+    "summary": "Register unemployed persons for job matching and training programmes.",
+    "official_url": "https://www.manpower.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "job",
+      "unemployment",
+      "jobseeker",
+      "career"
+    ]
+  },
+  {
+    "id": "factory-registration",
+    "title": "Factory Registration (Labour Dept)",
+    "sinhala": "කර්මාන්තශාලා ලියාපදිංචිය",
+    "category": "Employment & Labour",
+    "emoji": "🏭",
+    "department": "Department of Labour",
+    "summary": "Register factories and workplaces for labour law compliance inspections.",
+    "official_url": "https://www.labourdept.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "factory",
+      "workplace",
+      "labour inspection",
+      "osh"
+    ]
+  },
+  {
+    "id": "eta-tourist-visa",
+    "title": "ETA Tourist Visa (Online)",
+    "sinhala": "ETA සංචාරක වීසා",
+    "category": "Immigration",
+    "emoji": "🛂",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Apply online for short-stay tourist ETA before travelling to Sri Lanka.",
+    "official_url": "https://www.eta.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "eta",
+      "tourist visa",
+      "visit",
+      "immigration"
+    ]
+  },
+  {
+    "id": "visa-extension",
+    "title": "Visa Extension",
+    "sinhala": "වීසා කාලය දීර්ඝ කිරීම",
+    "category": "Immigration",
+    "emoji": "📅",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Extend stay beyond initial visa period at Visa Division, Colombo.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "visa extension",
+      "overstay",
+      "immigration"
+    ]
+  },
+  {
+    "id": "residence-visa",
+    "title": "Residence Visa",
+    "sinhala": "නිවාසික වීසා",
+    "category": "Immigration",
+    "emoji": "🏠",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Long-term residence visas for employment, investment, retirement and dependents.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "residence visa",
+      "long stay",
+      "immigration",
+      "pr"
+    ]
+  },
+  {
+    "id": "dual-citizenship",
+    "title": "Dual Citizenship Application",
+    "sinhala": "ද්විත්ව පුරවැසි බව",
+    "category": "Immigration",
+    "emoji": "🛂",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Apply for dual citizenship if you lost Sri Lankan citizenship after acquiring foreign citizenship.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "dual citizenship",
+      "citizenship",
+      "diaspora",
+      "foreign passport"
+    ]
+  },
+  {
+    "id": "emigration-clearance",
+    "title": "Emigration Clearance (Foreign Jobs)",
+    "sinhala": "ආගමන අනුමැතිය",
+    "category": "Immigration",
+    "emoji": "📋",
+    "department": "SLBFE / Immigration",
+    "summary": "Mandatory clearance before departing for foreign employment through registered agencies.",
+    "official_url": "https://www.slbfe.lk",
+    "online_available": true,
+    "keywords": [
+      "emigration",
+      "clearance",
+      "foreign job",
+      "departure"
+    ]
+  },
+  {
+    "id": "citizenship-registration",
+    "title": "Citizenship by Registration",
+    "sinhala": "පුරවැසි බව ලියාපදිංචිය",
+    "category": "Immigration",
+    "emoji": "🇱🇰",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Citizenship for spouses of citizens, minors and special statutory cases.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "citizenship",
+      "naturalization",
+      "spouse"
+    ]
+  },
+  {
+    "id": "death-certificate",
+    "title": "Death Certificate",
+    "sinhala": "මරණ සහතිකය",
+    "category": "Civil Records",
+    "emoji": "📋",
+    "department": "Registrar General's Department",
+    "summary": "Obtain official death certificate from registrar or online via eBMD.",
+    "official_url": "https://www.ebmd.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "death certificate",
+      "death",
+      "ebmd",
+      "registrar"
+    ]
+  },
+  {
+    "id": "divorce-certificate",
+    "title": "Divorce Certificate / Decree",
+    "sinhala": "දික්කසාද සහතිකය",
+    "category": "Civil Records",
+    "emoji": "📄",
+    "department": "Registrar General's Department / Courts",
+    "summary": "Register divorce and obtain certified copies for legal use.",
+    "official_url": "https://www.rgd.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "divorce",
+      "decree",
+      "marriage dissolution"
+    ]
+  },
+  {
+    "id": "name-change-deed",
+    "title": "Name Change (Deed Poll)",
+    "sinhala": "නම වෙනස් කිරීම",
+    "category": "Civil Records",
+    "emoji": "✏️",
+    "department": "Notary / Birth Registrar",
+    "summary": "Legally change name via notarial deed and update civil records.",
+    "official_url": "https://www.rgd.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "name change",
+      "deed poll",
+      "rename"
+    ]
+  },
+  {
+    "id": "adoption-registration",
+    "title": "Adoption Registration",
+    "sinhala": "දරු දැරියම් ලියාපදිංචිය",
+    "category": "Civil Records",
+    "emoji": "👨‍👩‍👧",
+    "department": "Probation & Child Care / Courts",
+    "summary": "Legal adoption process through courts and child care authorities.",
+    "official_url": "https://www.childwomenmin.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "adoption",
+      "child",
+      "guardian"
+    ]
+  },
+  {
+    "id": "notary-registration",
+    "title": "Notary Public Registration",
+    "sinhala": "නොටරි ලියාපදිංචිය",
+    "category": "Legal",
+    "emoji": "🖊️",
+    "department": "Ministry of Justice",
+    "summary": "Apply to practise as a notary public for attestation and deeds.",
+    "official_url": "https://www.jsc.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "notary",
+      "attestation",
+      "deed",
+      "justice"
+    ]
+  },
+  {
+    "id": "attorney-enrollment",
+    "title": "Attorney-at-Law Enrollment",
+    "sinhala": "නීතිඥ ලියාපදිංචිය",
+    "category": "Legal",
+    "emoji": "⚖️",
+    "department": "Bar Association / JSC",
+    "summary": "Enroll as practising lawyer after law college and apprenticeship.",
+    "official_url": "https://www.basl.lk",
+    "online_available": false,
+    "keywords": [
+      "lawyer",
+      "attorney",
+      "bar",
+      "legal practice"
+    ]
+  },
+  {
+    "id": "court-case-filing",
+    "title": "Court Case Filing (District / Magistrate)",
+    "sinhala": "නඩු පැමිණිල්ල",
+    "category": "Legal",
+    "emoji": "🏛️",
+    "department": "Judicial Service Commission",
+    "summary": "File civil and criminal cases at appropriate court with pleadings and fees.",
+    "official_url": "https://www.jsc.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "court",
+      "case",
+      "lawsuit",
+      "filing",
+      "magistrate"
+    ]
+  },
+  {
+    "id": "legal-aid-commission",
+    "title": "Legal Aid (Free Legal Assistance)",
+    "sinhala": "නීති උපකාර",
+    "category": "Legal",
+    "emoji": "🆓",
+    "department": "Legal Aid Commission",
+    "summary": "Free legal representation for eligible low-income litigants.",
+    "official_url": "https://www.legalaid.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "legal aid",
+      "free lawyer",
+      "poor",
+      "assistance"
+    ]
+  },
+  {
+    "id": "bail-application",
+    "title": "Bail Application Guidance",
+    "sinhala": "බේල් ඇපීම",
+    "category": "Legal",
+    "emoji": "🔓",
+    "department": "Courts / Police",
+    "summary": "Process for bail applications in criminal matters — handled through courts.",
+    "official_url": "https://www.jsc.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "bail",
+      "arrest",
+      "criminal",
+      "court"
+    ]
+  },
+  {
+    "id": "ceb-electricity-connection",
+    "title": "New Electricity Connection (CEB)",
+    "sinhala": "විදුලි සම්බන්ධතාව",
+    "category": "Utilities & Licensing",
+    "emoji": "⚡",
+    "department": "Ceylon Electricity Board",
+    "summary": "Apply for new domestic or commercial electricity supply connections.",
+    "official_url": "https://www.ceb.lk",
+    "online_available": true,
+    "keywords": [
+      "ceb",
+      "electricity",
+      "power",
+      "connection",
+      "meter"
+    ]
+  },
+  {
+    "id": "nwsdb-water-connection",
+    "title": "Water Supply Connection (NWSDB)",
+    "sinhala": "ජල සම්බන්ධතාව",
+    "category": "Utilities & Licensing",
+    "emoji": "💧",
+    "department": "National Water Supply & Drainage Board",
+    "summary": "Apply for new water supply connections and billing accounts.",
+    "official_url": "https://www.waterboard.lk",
+    "online_available": true,
+    "keywords": [
+      "water",
+      "nwsdb",
+      "connection",
+      "tap"
+    ]
+  },
+  {
+    "id": "telecom-license-trc",
+    "title": "Telecommunications License (TRCSL)",
+    "sinhala": "දුරසන්නිවේදන බලපත්‍රය",
+    "category": "Utilities & Licensing",
+    "emoji": "📡",
+    "department": "Telecommunications Regulatory Commission",
+    "summary": "Licenses for telecom operators and spectrum allocation.",
+    "official_url": "https://www.trc.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "telecom",
+      "trc",
+      "license",
+      "spectrum",
+      "mobile"
+    ]
+  },
+  {
+    "id": "environmental-impact",
+    "title": "Environmental Impact Assessment (EIA)",
+    "sinhala": "පාරිසරික බලපෑම් ඇගයීම",
+    "category": "Utilities & Licensing",
+    "emoji": "🌳",
+    "department": "Central Environmental Authority",
+    "summary": "EIA approval required for prescribed development projects.",
+    "official_url": "https://www.cea.lk",
+    "online_available": false,
+    "keywords": [
+      "eia",
+      "environment",
+      "cea",
+      "project approval"
+    ]
+  },
+  {
+    "id": "fishing-license",
+    "title": "Fishing License & Boat Registration",
+    "sinhala": "මත්ස්‍ය බලපත්‍රය",
+    "category": "Utilities & Licensing",
+    "emoji": "🎣",
+    "department": "Department of Fisheries",
+    "summary": "Register fishing boats and obtain licenses for coastal and deep-sea fishing.",
+    "official_url": "https://www.fisheries.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "fishing",
+      "boat",
+      "fisheries",
+      "license"
+    ]
+  },
+  {
+    "id": "army-recruitment",
+    "title": "Army / Navy / Air Force Recruitment",
+    "sinhala": "හමුදා බඳවා ගැනීම",
+    "category": "Defence & Security",
+    "emoji": "🪖",
+    "department": "Ministry of Defence",
+    "summary": "Enlist in Sri Lanka Armed Forces during recruitment campaigns.",
+    "official_url": "https://www.defence.lk",
+    "online_available": true,
+    "keywords": [
+      "army",
+      "navy",
+      "air force",
+      "military",
+      "recruitment"
+    ]
+  },
+  {
+    "id": "police-complaint",
+    "title": "Police Complaint / FIR",
+    "sinhala": "පොලිස් පැමිණිල්ල",
+    "category": "Defence & Security",
+    "emoji": "🚔",
+    "department": "Sri Lanka Police",
+    "summary": "Lodge complaints and First Information Reports at any police station.",
+    "official_url": "https://www.police.lk",
+    "online_available": false,
+    "keywords": [
+      "police",
+      "complaint",
+      "fir",
+      "crime",
+      "theft"
+    ]
+  },
+  {
+    "id": "firearm-license",
+    "title": "Firearm License",
+    "sinhala": "ගිනි අවි බලපත්‍රය",
+    "category": "Defence & Security",
+    "emoji": "🔫",
+    "department": "Ministry of Defence",
+    "summary": "Strictly controlled license for shotguns and firearms for eligible applicants.",
+    "official_url": "https://www.defence.lk",
+    "online_available": false,
+    "keywords": [
+      "gun",
+      "firearm",
+      "license",
+      "shotgun"
+    ]
+  },
+  {
+    "id": "railway-season-ticket",
+    "title": "Railway Season Ticket",
+    "sinhala": "දුම්රිය සීසන් ටිකට්",
+    "category": "Vehicles",
+    "emoji": "🚂",
+    "department": "Sri Lanka Railways",
+    "summary": "Monthly season tickets for regular commuters on railway lines.",
+    "official_url": "https://www.railway.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "train",
+      "railway",
+      "season ticket",
+      "commuter"
+    ]
+  },
+  {
+    "id": "port-customs-clearance",
+    "title": "Port Cargo Clearance",
+    "sinhala": "වරාය භාණ්ඩ නිෂ්කාශනය",
+    "category": "Vehicles",
+    "emoji": "⚓",
+    "department": "Sri Lanka Ports Authority / Customs",
+    "summary": "Clear imported vehicles and cargo through Colombo and regional ports.",
+    "official_url": "https://www.slpa.lk",
+    "online_available": false,
+    "keywords": [
+      "port",
+      "cargo",
+      "vehicle import",
+      "clearance"
+    ]
+  },
+  {
+    "id": "gic-portal",
+    "title": "Government Information Center (GIC)",
+    "sinhala": "රජයේ තොරතුරු මධ්‍යස්ථානය",
+    "category": "Civic",
+    "emoji": "ℹ️",
+    "department": "ICTA / President's Office",
+    "summary": "Central directory of 1,400+ government services — call 1919 or use gic.gov.lk.",
+    "official_url": "https://www.gic.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "gic",
+      "1919",
+      "government services",
+      "directory",
+      "helpdesk"
+    ]
+  },
+  {
+    "id": "govpay-platform",
+    "title": "GovPay Digital Payments",
+    "sinhala": "GovPay ඩිජිටල් ගෙවීම්",
+    "category": "Civic",
+    "emoji": "💳",
+    "department": "ICTA",
+    "summary": "Pay government fees including traffic fines via mobile banking integrations.",
+    "official_url": "https://govpay.lk",
+    "online_available": true,
+    "keywords": [
+      "govpay",
+      "digital payment",
+      "fine",
+      "government payment"
+    ]
+  },
+  {
+    "id": "egram-swaraj",
+    "title": "e-Grama Niladhari Services",
+    "sinhala": "ඊ-ග්‍රාම නිලධාරී",
+    "category": "Civic",
+    "emoji": "🏘️",
+    "department": "ICTA / Local Government",
+    "summary": "Digital gram niladhari certificates and local government e-services.",
+    "official_url": "https://www.egov.lk",
+    "online_available": true,
+    "keywords": [
+      "egrama",
+      "gram niladhari",
+      "digital certificate",
+      "egov"
+    ]
+  },
+  {
+    "id": "rti-request",
+    "title": "Right to Information (RTI) Request",
+    "sinhala": "තොරතුරු දැනගැනීමේ අයිතිය",
+    "category": "Civic",
+    "emoji": "📢",
+    "department": "RTI Commission",
+    "summary": "Submit RTI applications to obtain public information from government institutions.",
+    "official_url": "https://www.rticommission.lk",
+    "online_available": false,
+    "keywords": [
+      "rti",
+      "freedom of information",
+      "transparency",
+      "request"
+    ]
+  },
+  {
+    "id": "consumer-affairs-complaint",
+    "title": "Consumer Affairs Complaint",
+    "sinhala": "පාරිභෝගික පැමිණිල්ල",
+    "category": "Civic",
+    "emoji": "🛒",
+    "department": "Consumer Affairs Authority",
+    "summary": "Lodge complaints against traders for unfair practices and pricing violations.",
+    "official_url": "https://www.caa.gov.lk",
+    "online_available": true,
+    "keywords": [
+      "consumer",
+      "complaint",
+      "caa",
+      "fraud",
+      "pricing"
+    ]
+  },
+  {
+    "id": "farmer-registration",
+    "title": "Farmer Registration (Agrarian Services)",
+    "sinhala": "ගොවි ලියාපදිංචිය",
+    "category": "Agriculture",
+    "emoji": "🌱",
+    "department": "Department of Agrarian Development",
+    "summary": "Register farmers for paddy land cultivation rights and subsidy programmes.",
+    "official_url": "https://www.agrimin.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "farmer",
+      "paddy",
+      "agriculture",
+      "cultivation"
+    ]
+  },
+  {
+    "id": "coconut-development",
+    "title": "Coconut Cultivation Registration",
+    "sinhala": "පොල් වගා ලියාපදිංචිය",
+    "category": "Agriculture",
+    "emoji": "🥥",
+    "department": "Coconut Development Authority",
+    "summary": "Support programmes and registration for coconut estate owners and smallholders.",
+    "official_url": "https://www.cda.lk",
+    "online_available": false,
+    "keywords": [
+      "coconut",
+      "estate",
+      "agriculture"
+    ]
+  },
+  {
+    "id": "tea-smallholder-registration",
+    "title": "Tea Smallholder Registration",
+    "sinhala": "තේ කුඩා හිමිකරු ලියාපදිංචිය",
+    "category": "Agriculture",
+    "emoji": "🍵",
+    "department": "Tea Small Holdings Development Authority",
+    "summary": "Register small tea plots for subsidies and factory supply chains.",
+    "official_url": "https://www.teasmallholders.lk",
+    "online_available": false,
+    "keywords": [
+      "tea",
+      "smallholder",
+      "estate",
+      "agriculture"
+    ]
+  },
+  {
+    "id": "nic-correction",
+    "title": "NIC Data Correction",
+    "sinhala": "හැඳුනුම්පත නිවැරදි කිරීම",
+    "category": "Identity",
+    "emoji": "🪪",
+    "department": "Department for Registration of Persons",
+    "summary": "Correct spelling, date of birth or address errors on NIC records.",
+    "official_url": "https://www.drp.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "nic correction",
+      "identity card",
+      "name fix",
+      "drp"
+    ]
+  },
+  {
+    "id": "birth-registration-late",
+    "title": "Late Birth Registration",
+    "sinhala": "ප්‍රමාද උපත ලියාපදිංචිය",
+    "category": "Identity",
+    "emoji": "👶",
+    "department": "Registrar General's Department",
+    "summary": "Register births that were not registered within the statutory period.",
+    "official_url": "https://www.rgd.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "late birth",
+      "birth registration",
+      "unregistered"
+    ]
+  },
+  {
+    "id": "emergency-travel-document",
+    "title": "Emergency Travel Document",
+    "sinhala": "හදිසි ගමන් දුවන ලියකියවිලි",
+    "category": "Travel",
+    "emoji": "🆘",
+    "department": "Department of Immigration & Emigration",
+    "summary": "One-way travel document when passport is lost overseas or expired urgently.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "emergency passport",
+      "travel document",
+      "lost passport"
+    ]
+  },
+  {
+    "id": "visa-overstay-fine",
+    "title": "Visa Overstay Fine Payment",
+    "sinhala": "වීසා කාලය ඉක්මවීමේ දඩ",
+    "category": "Travel",
+    "emoji": "⏰",
+    "department": "Department of Immigration & Emigration",
+    "summary": "Pay overstay penalties before departure or visa extension.",
+    "official_url": "https://www.immigration.gov.lk",
+    "online_available": false,
+    "keywords": [
+      "overstay",
+      "visa fine",
+      "immigration penalty"
+    ]
+  }
+]

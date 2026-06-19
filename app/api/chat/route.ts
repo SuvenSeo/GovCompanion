@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: getChatModel(),
-    system: buildSystemPrompt(),
+    system: buildSystemPrompt(messages),
     messages,
     maxTokens: 1024,
     temperature: 0.2,
