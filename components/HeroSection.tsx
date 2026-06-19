@@ -1,5 +1,6 @@
 'use client'
 
+import { useLanguage } from '@/components/LanguageProvider'
 import LionMotif from '@/components/LionMotif'
 import LkTricolorBar from '@/components/LkTricolorBar'
 import { ClockIcon, LayersIcon, PhoneIcon, UsersIcon } from '@/components/Icons'
@@ -17,11 +18,12 @@ export default function HeroSection({ onStartQuery, onVisibilityChange }: HeroSe
   const [visible, setVisible] = useState(true)
   const [closing, setClosing] = useState(false)
   const total = getTotalServiceCount()
+  const { t } = useLanguage()
 
   const stats = [
-    { Icon: LayersIcon, value: `${total}+`, label: 'Services' },
-    { Icon: UsersIcon, value: '22M', label: 'Citizens' },
-    { Icon: ClockIcon, value: '2–4h', label: 'Saved' },
+    { Icon: LayersIcon, value: `${total}+`, label: t('stats.services') },
+    { Icon: UsersIcon, value: '22M', label: t('stats.citizens') },
+    { Icon: ClockIcon, value: '2–4h', label: t('stats.saved') },
     { Icon: PhoneIcon, value: '1919', label: 'GIC' },
   ]
 
@@ -75,7 +77,7 @@ export default function HeroSection({ onStartQuery, onVisibilityChange }: HeroSe
         <span className="inline-flex items-center justify-center gap-2">
           <LionMotif size={18} variant="maroon" className="dark:hidden" />
           <LionMotif size={18} variant="gold" className="hidden dark:block" />
-          Show welcome banner
+          {t('hero.showBanner')}
         </span>
       </button>
     )
@@ -111,15 +113,15 @@ export default function HeroSection({ onStartQuery, onVisibilityChange }: HeroSe
             <div className="flex items-start gap-3 md:min-w-0 md:flex-1">
               <LionMotif size={44} variant="gold" className="flex-shrink-0 hidden sm:block animate-float" />
               <div className="min-w-0 text-left">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-lk-gold-light/90 mb-1">
-                  Your Government Services Companion
+                <p className="font-sinhala text-[10px] font-bold uppercase tracking-widest text-lk-gold-light/90 mb-1">
+                  {t('hero.eyebrow')}
                 </p>
-                <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight">
-                  Government services made{' '}
-                  <span className="text-lk-gold-light">simple & clear</span>
+                <h2 className="font-sinhala text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight">
+                  {t('hero.titleLead')}{' '}
+                  <span className="text-lk-gold-light">{t('hero.titleAccent')}</span>
                 </h2>
                 <p className="font-sinhala text-xs md:text-sm text-white/70 mt-1 truncate">
-                  රජයේ සේවා දැන් සරලයි, පැහැදිලියි
+                  {t('hero.tagline')}
                 </p>
               </div>
             </div>
@@ -140,9 +142,9 @@ export default function HeroSection({ onStartQuery, onVisibilityChange }: HeroSe
             <button
               type="button"
               onClick={handleStart}
-              className="group flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lk-gold via-lk-gold-light to-lk-gold text-lk-maroon-dark font-extrabold px-5 py-2.5 rounded-full shadow-lk-glow transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.98] text-sm"
+              className="group font-sinhala flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-lk-gold via-lk-gold-light to-lk-gold text-lk-maroon-dark font-extrabold px-5 py-2.5 rounded-full shadow-lk-glow transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.98] text-sm"
             >
-              Start Your Query
+              {t('hero.cta')}
               <span className="transition-transform group-hover:translate-x-0.5">→</span>
             </button>
           </div>

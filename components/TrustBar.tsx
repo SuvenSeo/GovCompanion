@@ -1,5 +1,6 @@
 'use client'
 
+import { useLanguage } from '@/components/LanguageProvider'
 import LkTricolorBar from '@/components/LkTricolorBar'
 import { CheckBadgeIcon, PhoneIcon, ShieldIcon } from '@/components/Icons'
 
@@ -10,6 +11,7 @@ const TRUST_ITEMS = [
 ]
 
 export default function TrustBar() {
+  const { t } = useLanguage()
   return (
     <footer className="flex-shrink-0 relative z-10">
       <LkTricolorBar />
@@ -39,9 +41,9 @@ export default function TrustBar() {
             ))}
           </div>
           <div className="flex items-center gap-1.5 text-[10px]">
-            <span className="inline-flex items-center gap-1.5 font-semibold text-lk-maroon dark:text-lk-gold-light">
+            <span className="inline-flex items-center gap-1.5 font-semibold font-sinhala text-lk-maroon dark:text-lk-gold-light">
               <span className="w-1.5 h-1.5 rounded-full bg-lk-saffron flex-shrink-0" aria-hidden />
-              Not official · Verify at office
+              {t('trust.notOfficial')}
             </span>
             <span className="text-gray-300 dark:text-lk-cream/20 hidden sm:inline">·</span>
             <span className="text-gray-400 dark:text-lk-cream/35 font-sinhala hidden sm:inline">

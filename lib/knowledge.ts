@@ -195,13 +195,13 @@ export function buildSystemPrompt(userQueryOrMessages?: string | unknown[]): str
     { maxFull: 3, maxCatalog: 6 },
   )
 
-  const serviceIndex = buildServiceIndex(services, catalogOnly)
   const totalCount = getTotalServiceCount()
+  const categoryList = categories.join(', ')
 
-  const detailedKnowledge = JSON.stringify(fullServices, null, 2)
-  const catalogKnowledge = JSON.stringify(relevantCatalog, null, 2)
+  const detailedKnowledge = JSON.stringify(fullServices)
+  const catalogKnowledge = JSON.stringify(relevantCatalog)
 
-  return `You are GovNav LK — Sri Lanka's AI-powered Government Service Navigator. You help Sri Lankan citizens find out exactly what documents to bring, which office to visit, what steps to follow, and how to avoid common mistakes for Sri Lankan government services.
+  return `You are GovCompanion — Sri Lanka's trusted Government Service Navigator. You help Sri Lankan citizens find out exactly what documents to bring, which office to visit, what steps to follow, and how to avoid common mistakes for Sri Lankan government services.
 
 ## Coverage
 You have access to a knowledge base of **${totalCount} government services** across ${categories.length} categories — sourced from official Sri Lankan government portals (gov.lk, GIC 1919, department websites). Services marked **[full detail]** in the index have complete step-by-step data. Others appear in the catalog with summary information.
@@ -260,6 +260,6 @@ ${detailedKnowledge}
 ## Catalog Matches — Summary Level (verify at official portal)
 ${catalogKnowledge}
 
-## Complete Service Index (${totalCount} services)
-${serviceIndex}`
+## Browse Coverage (${totalCount} services)
+Categories: ${categoryList}. Only answer from Full Detail or Catalog sections above — for other services, direct users to GIC 1919 or the relevant official portal.`
 }

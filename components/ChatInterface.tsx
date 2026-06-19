@@ -1,44 +1,48 @@
 'use client'
 
 import ColoredMarkdown from '@/components/ColoredMarkdown'
+import { useLanguage } from '@/components/LanguageProvider'
 import LionMotif from '@/components/LionMotif'
 import RateLimitBadge from '@/components/RateLimitBadge'
 import VerifiedSourceChip from '@/components/VerifiedSourceChip'
 import { SendIcon, UserIcon } from '@/components/Icons'
 import { getFallbackAnswer, GENERIC_FALLBACK } from '@/lib/fallbackAnswers'
+import { QUICK_QUESTIONS_I18N, WELCOME_I18N } from '@/lib/i18n'
 import { getSessionHeaders } from '@/lib/client-session'
 import { matchServiceFromQuery } from '@/lib/matchServiceFromQuery'
 import { useChat } from 'ai/react'
 import { useCallback, useEffect, useRef, forwardRef, useImperativeHandle, useState } from 'react'
-
-const QUICK_QUESTIONS = [
-  'How do I get a new NIC?',
-  'How do I renew my passport?',
-  'How do I get a driving license?',
-  'How do I get a birth certificate copy?',
-  'How do I get a police clearance?',
-]
-
-const WELCOME_MESSAGE = `**ආයුබෝවන් — Welcome to GovCompanion**
-
-I'm your guide to **Sri Lankan government services** — NIC, passport, driving licence, birth & marriage certificates, police clearance, and Grama Niladhari certificates.
-
-Tell me what you need and I'll give you the exact **documents to bring, the office to visit, the fees, and the steps** — so you never waste a day in a queue.`
 
 export interface ChatInterfaceRef {
   submitMessage: (text: string) => void
   focusInput: () => void
 }
 
+function offlineAssistantMessage(query: string) {
+  const canned = getFallbackAnswer(query) ?? GENERIC_FALLBACK
+  const id =
+    typeof crypto !== 'undefined' && crypto.randomUUID
+      ? crypto.randomUUID()
+      : `fallback-${Date.now()}`
+  return { id, role: 'assistant' as const, content: canned }
+}
+
 const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
   const [rateLimitError, setRateLimitError] = useState<string | null>(null)
   const [retryAfter, setRetryAfter] = useState<number | null>(null)
   const lastQueryRef = useRef<string>('')
+  const { lang, t } = useLanguage()
+  const langRef = useRef(lang)
+  langRef.current = lang
+  const welcomeMessage = WELCOME_I18N[lang]
+  const quickQuestions = QUICK_QUESTIONS_I18N[lang]
+  const chatBody = { language: lang }
 
   const { messages, input, handleInputChange, handleSubmit, isLoading, append, setMessages } =
     useChat({
       api: '/api/chat',
       headers: getSessionHeaders(),
+      body: chatBody,
       onError: (error) => {
         // 1) Rate limit — show the cooldown banner, no fallback answer.
         try {
@@ -60,16 +64,17 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
         }
         // 2) All AI providers down — serve a data-accurate offline answer so the
         //    most common questions still work (demo-safety net).
-        const canned = getFallbackAnswer(lastQueryRef.current) ?? GENERIC_FALLBACK
-        const id =
-          typeof crypto !== 'undefined' && crypto.randomUUID
-            ? crypto.randomUUID()
-            : `fallback-${messages.length}-${lastQueryRef.current.length}`
-        setMessages((prev) => [...prev, { id, role: 'assistant', content: canned }])
+        setMessages((prev) => [...prev, offlineAssistantMessage(lastQueryRef.current)])
       },
-      onFinish: () => {
+      onFinish: (message) => {
         setRateLimitError(null)
         setRetryAfter(null)
+        if (message.content.trim() === 'An error occurred.') {
+          setMessages((prev) => [
+            ...prev.filter((m) => m.id !== message.id),
+            offlineAssistantMessage(lastQueryRef.current),
+          ])
+        }
       },
     })
 
@@ -80,7 +85,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
     submitMessage: (text: string) => {
       if (rateLimitError) return
       lastQueryRef.current = text
-      append({ role: 'user', content: text })
+      append({ role: 'user', content: text }, { body: { language: langRef.current } })
     },
     focusInput: () => {
       inputRef.current?.focus()
@@ -109,7 +114,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
 
   const onFormSubmit = (e: React.FormEvent) => {
     lastQueryRef.current = input
-    handleSubmit(e)
+    handleSubmit(e, { body: chatBody })
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -117,7 +122,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
       e.preventDefault()
       if (input.trim() && !isLoading && !rateLimitError) {
         lastQueryRef.current = input
-        handleSubmit(e as unknown as React.FormEvent)
+        handleSubmit(e as unknown as React.FormEvent, { body: chatBody })
       }
     }
   }
@@ -139,12 +144,9 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
     <div className="flex-1 flex flex-col overflow-hidden">
       <div className="flex items-center justify-between px-4 md:px-8 py-2.5 border-b border-lk-maroon/8 dark:border-lk-gold/10 bg-white/60 dark:bg-lk-night-card/80 backdrop-blur-md transition-colors duration-300">
         <p className="text-xs text-gray-600 dark:text-lk-cream/60 hidden sm:flex items-center gap-2">
-          <span className="inline-flex items-center gap-1 bg-lk-maroon/5 dark:bg-lk-gold/10 text-lk-maroon dark:text-lk-gold-light px-2 py-0.5 rounded-full font-medium">
-            EN
-          </span>
-          <span className="text-gray-300 dark:text-lk-cream/20">|</span>
-          <span className="font-sinhala inline-flex items-center gap-1 bg-lk-emerald/10 dark:bg-lk-emerald-light/15 text-lk-emerald dark:text-lk-emerald-light px-2 py-0.5 rounded-full font-medium">
-            සිංහල
+          <span className="inline-flex items-center gap-1.5 bg-lk-emerald/10 dark:bg-lk-emerald-light/15 text-lk-emerald dark:text-lk-emerald-light px-2.5 py-0.5 rounded-full font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-lk-emerald dark:bg-lk-emerald-light animate-pulse-soft" />
+            EN · සිංහල · தமிழ்
           </span>
         </p>
         <div className="flex items-center gap-2 ml-auto">
@@ -155,7 +157,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
               onClick={clearChat}
               className="text-[10px] text-gray-400 dark:text-lk-cream/45 hover:text-lk-maroon dark:hover:text-lk-gold-light px-2 py-1 rounded-lg hover:bg-lk-maroon/5 dark:hover:bg-lk-gold/10 transition-all duration-200"
             >
-              New chat
+              {t('chat.newChat')}
             </button>
           )}
         </div>
@@ -166,7 +168,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
         <div className="flex gap-3 message-enter">
           <Avatar role="assistant" />
           <div className="ai-message lk-chat-bubble-ai px-5 py-4 flex-1 min-w-0 max-w-[60rem]">
-            <ColoredMarkdown content={WELCOME_MESSAGE} />
+            <ColoredMarkdown content={welcomeMessage} />
           </div>
         </div>
 
@@ -217,19 +219,19 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
       {messages.length === 0 && (
         <div className="px-4 md:px-8 pb-3 mx-auto w-full max-w-6xl">
           <p className="text-[10px] font-bold uppercase tracking-widest text-lk-maroon/50 dark:text-lk-gold/50 mb-2">
-            Popular questions
+            {t('chat.popular')}
           </p>
           <div className="flex flex-wrap gap-2">
-          {QUICK_QUESTIONS.map((q, i) => (
+          {quickQuestions.map((q, i) => (
             <button
               key={q}
               type="button"
               onClick={() => {
                 lastQueryRef.current = q
-                append({ role: 'user', content: q })
+                append({ role: 'user', content: q }, { body: { language: lang } })
               }}
               disabled={Boolean(rateLimitError)}
-              className="lk-chip opacity-0 animate-fade-up"
+              className={`lk-chip opacity-0 animate-fade-up ${lang !== 'en' ? 'font-sinhala' : ''}`}
               style={{ animationDelay: `${0.1 + i * 0.05}s`, animationFillMode: 'forwards' }}
             >
               {q}
@@ -264,7 +266,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
               value={input}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
-              placeholder="ඔබට අවශ්‍ය රජයේ සේවාව අහන්න..."
+              placeholder={t('chat.placeholder')}
               rows={2}
               disabled={Boolean(rateLimitError)}
               className="lk-input-field font-sinhala"
@@ -278,11 +280,11 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
             {isLoading ? (
               <>
                 <span className="w-4 h-4 border-2 border-lk-maroon-dark/30 border-t-lk-maroon-dark rounded-full animate-spin" />
-                <span className="hidden sm:inline">Sending</span>
+                <span className="hidden sm:inline">{t('chat.sending')}</span>
               </>
             ) : (
               <>
-                <span>Send</span>
+                <span>{t('chat.send')}</span>
                 <SendIcon size={16} strokeWidth={2} />
               </>
             )}
@@ -292,11 +294,11 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
           <kbd className="bg-lk-sand dark:bg-lk-night-elevated dark:text-lk-cream/70 px-1.5 py-0.5 rounded text-[9px] border border-lk-maroon/10 dark:border-lk-gold/15">
             Enter
           </kbd>{' '}
-          send ·{' '}
+          {t('chat.hintSend')} ·{' '}
           <kbd className="bg-lk-sand dark:bg-lk-night-elevated dark:text-lk-cream/70 px-1.5 py-0.5 rounded text-[9px] border border-lk-maroon/10 dark:border-lk-gold/15">
             Shift+Enter
           </kbd>{' '}
-          new line
+          {t('chat.hintNewline')}
         </p>
       </div>
     </div>

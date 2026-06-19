@@ -30,8 +30,8 @@ const openrouter = createOpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: 'https://openrouter.ai/api/v1',
   headers: {
-    'HTTP-Referer': process.env.OPENROUTER_SITE_URL ?? 'https://gov-navigator-lk.vercel.app',
-    'X-Title': 'GovNav LK',
+    'HTTP-Referer': process.env.OPENROUTER_SITE_URL ?? 'https://govcompanion-lk.vercel.app',
+    'X-Title': 'GovCompanion',
   },
 })
 

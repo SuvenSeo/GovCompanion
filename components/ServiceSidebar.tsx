@@ -1,5 +1,6 @@
 'use client'
 
+import { useLanguage } from '@/components/LanguageProvider'
 import LionMotif from '@/components/LionMotif'
 import { SearchIcon } from '@/components/Icons'
 import {
@@ -74,6 +75,7 @@ export default function ServiceSidebar({
 }: ServiceSidebarProps) {
   const [expanded, setExpanded] = useState<string | null>('Identity')
   const [search, setSearch] = useState('')
+  const { t } = useLanguage()
 
   const totalCount = getTotalServiceCount()
   const searchResults = useMemo(() => searchBrowsable(search), [search])
@@ -110,8 +112,8 @@ export default function ServiceSidebar({
         <div className="flex items-center gap-2 mb-2">
           <LionMotif size={28} variant="gold" className="flex-shrink-0" />
           <div>
-            <p className="text-xs font-black text-lk-gold-light uppercase tracking-widest">
-              Browse Services
+            <p className="font-sinhala text-xs font-black text-lk-gold-light uppercase tracking-widest">
+              {t('sidebar.browse')}
             </p>
             <p className="font-sinhala text-[10px] text-white/45">රජයේ සේවා</p>
           </div>
@@ -128,8 +130,8 @@ export default function ServiceSidebar({
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search services..."
-            className="w-full rounded-xl bg-white/10 border border-white/15 pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-lk-gold/50 focus:border-lk-gold/30 transition-all duration-200"
+            placeholder={t('sidebar.search')}
+            className="w-full font-sinhala rounded-xl bg-white/10 border border-white/15 pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-lk-gold/50 focus:border-lk-gold/30 transition-all duration-200"
             aria-label="Search government services"
           />
         </div>

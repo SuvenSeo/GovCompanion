@@ -1,4 +1,4 @@
-import { streamText, type Message } from 'ai'
+import { generateText, formatDataStreamPart, generateId, type Message } from 'ai'
 import {
   getProviderChain,
   getChatModelForProvider,
@@ -23,9 +23,36 @@ function modelsForProvider(provider: AiProvider): (string | undefined)[] {
   return [undefined]
 }
 
-async function streamWithProviderFallback(
+const LANGUAGE_DIRECTIVE: Record<string, string> = {
+  si: '\n\nIMPORTANT: The user has selected Sinhala. Reply entirely in clear, natural Sinhala (සිංහල). Keep official office names, URLs, and form codes in their original form.',
+  ta: '\n\nIMPORTANT: The user has selected Tamil. Reply entirely in clear, natural Tamil (தமிழ்). Keep official office names, URLs, and form codes in their original form.',
+}
+
+/** useChat-compatible data stream from a completed answer (enables reliable multi-provider fallback). */
+function dataStreamFromText(text: string, headers: Record<string, string>): Response {
+  const messageId = generateId()
+  const body = [
+    formatDataStreamPart('start_step', { messageId }),
+    formatDataStreamPart('text', text),
+    formatDataStreamPart('finish_message', {
+      finishReason: 'stop',
+      usage: { promptTokens: 0, completionTokens: 0 },
+    }),
+  ].join('')
+
+  return new Response(body, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'X-Vercel-AI-Data-Stream': 'v1',
+      ...headers,
+    },
+  })
+}
+
+async function generateWithProviderFallback(
   messages: Omit<Message, 'id'>[],
   extraHeaders: Record<string, string>,
+  language?: string,
 ) {
   const chain = getProviderChain()
 
@@ -39,7 +66,8 @@ async function streamWithProviderFallback(
     )
   }
 
-  const system = buildSystemPrompt(messages)
+  const system =
+    buildSystemPrompt(messages) + (language ? LANGUAGE_DIRECTIVE[language] ?? '' : '')
   let lastError: unknown = null
   let attemptIndex = 0
 
@@ -52,7 +80,7 @@ async function streamWithProviderFallback(
       const attempt: AttemptResult = { provider, model: nvidiaModel, index: attemptIndex++ }
 
       try {
-        const result = streamText({
+        const { text } = await generateText({
           model: getChatModelForProvider(provider, { nvidiaModel }),
           system,
           messages,
@@ -60,13 +88,11 @@ async function streamWithProviderFallback(
           temperature: 0.2,
         })
 
-        return result.toDataStreamResponse({
-          headers: {
-            'X-AI-Provider': provider,
-            ...(nvidiaModel ? { 'X-AI-Model': nvidiaModel } : {}),
-            'X-AI-Fallback-Index': String(attempt.index),
-            ...extraHeaders,
-          },
+        return dataStreamFromText(text, {
+          'X-AI-Provider': provider,
+          ...(nvidiaModel ? { 'X-AI-Model': nvidiaModel } : {}),
+          'X-AI-Fallback-Index': String(attempt.index),
+          ...extraHeaders,
         })
       } catch (error) {
         lastError = error
@@ -75,7 +101,7 @@ async function streamWithProviderFallback(
 
         if (isRetryableProviderError(error) && (hasNextModel || hasNextProvider)) {
           console.warn(
-            `[GovNav] ${provider}${nvidiaModel ? `/${nvidiaModel}` : ''} failed, trying next:`,
+            `[GovCompanion] ${provider}${nvidiaModel ? `/${nvidiaModel}` : ''} failed, trying next:`,
             error,
           )
           continue
@@ -97,7 +123,7 @@ export async function POST(req: Request) {
       JSON.stringify({
         error: 'rate_limit_exceeded',
         message:
-          'You have reached the message limit for now. Please wait a few minutes — this helps keep GovNav available for everyone.',
+          'You have reached the message limit for now. Please wait a few minutes — this helps keep GovCompanion available for everyone.',
         retryAfter: retrySec,
       }),
       {
@@ -111,15 +137,16 @@ export async function POST(req: Request) {
     )
   }
 
-  const { messages } = await req.json()
+  const { messages, language } = await req.json()
 
   try {
-    return await streamWithProviderFallback(
+    return await generateWithProviderFallback(
       messages as Omit<Message, 'id'>[],
       rateLimitHeaders(rate),
+      typeof language === 'string' ? language : undefined,
     )
   } catch (error) {
-    console.error('[GovNav] Chat error:', error)
+    console.error('[GovCompanion] Chat error:', error)
     return new Response(
       JSON.stringify({
         error: 'ai_error',

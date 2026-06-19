@@ -1,5 +1,7 @@
 'use client'
 
+import LanguageToggle from '@/components/LanguageToggle'
+import { useLanguage } from '@/components/LanguageProvider'
 import LionMotif from '@/components/LionMotif'
 import LkTricolorBar from '@/components/LkTricolorBar'
 import ThemeToggle from '@/components/ThemeToggle'
@@ -32,6 +34,7 @@ export default function AppHeader({
   sidebarOpen,
   onOpenCompare,
 }: AppHeaderProps) {
+  const { t } = useLanguage()
   return (
     <header className="flex-shrink-0 z-20 shadow-lk-premium">
       <LkTricolorBar />
@@ -74,6 +77,7 @@ export default function AppHeader({
           </div>
 
           <div className="flex items-center gap-2 flex-shrink-0">
+            <LanguageToggle />
             <ThemeToggle />
             <div className="hidden md:flex items-center gap-3">
               {OFFICIAL_LINKS.map(({ label, href }) => (
@@ -90,7 +94,7 @@ export default function AppHeader({
             <div className="h-4 w-px bg-white/15" />
             <span className="hidden md:inline text-[11px] bg-emerald-500/20 border border-emerald-400/30 px-2.5 py-1 rounded-full text-emerald-100 flex items-center gap-1.5 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse-soft" />
-              Live AI
+              {t('header.liveAI')}
             </span>
             </div>
           </div>
@@ -102,7 +106,7 @@ export default function AppHeader({
       <div className="bg-gradient-to-r from-lk-maroon-dark via-[#3d0a11] to-lk-maroon-dark dark:from-lk-night dark:via-lk-night-card dark:to-lk-night px-4 md:px-6 py-2 flex items-center gap-2 overflow-x-auto scrollbar-none border-b border-lk-gold/10">
         <span className="text-[10px] text-lk-gold font-bold uppercase tracking-widest flex-shrink-0 inline-flex items-center gap-1.5">
           <BoltIcon size={12} strokeWidth={2.25} />
-          Quick ask
+          {t('header.quickAsk')}
         </span>
         <div className="flex items-center gap-2 flex-1 min-w-0">
           {QUICK_LINKS.map(({ label, q }) => (
@@ -123,7 +127,7 @@ export default function AppHeader({
             className="flex-shrink-0 text-[11px] font-bold text-lk-maroon-dark bg-gradient-to-r from-lk-gold to-lk-gold-light hover:from-lk-gold-light hover:to-lk-gold px-3.5 py-1.5 rounded-full transition-all duration-200 hover:-translate-y-0.5 active:scale-95 shadow-lk-glow inline-flex items-center gap-1.5"
           >
             <ScaleIcon size={13} strokeWidth={2} />
-            Compare
+            {t('header.compare')}
           </button>
         )}
       </div>
