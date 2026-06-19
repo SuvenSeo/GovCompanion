@@ -8,41 +8,46 @@
     "description": "Obtain your first Smart NIC. All Sri Lankan citizens aged 16 and above are eligible.",
     "department": "Department for Registration of Persons (DRP)",
     "offices": [
-      { "name": "DRP Head Office", "address": "No. 10, Regent Street, Maligawatte, Colombo 10", "phone": "+94 11 2323030" },
-      { "name": "Divisional Secretariat Offices", "address": "Your nearest Divisional Secretariat island-wide", "phone": "N/A" }
+      { "name": "DRP Head Office", "address": "10th Floor, Suhurupaya, Sri Subhuthipura Road, Battaramulla", "phone": "+94 11 5226100 / +94 11 2862255" },
+      { "name": "Divisional Secretariat Offices", "address": "Island-wide — primary service points for NIC applications", "phone": "N/A" }
     ],
     "documents_required": [
       "Original Birth Certificate",
-      "Two recent passport-size photographs (35mm × 45mm, white background)",
-      "Completed Form NIC 1 (from drp.gov.lk or any DS office)",
+      "ICAO-standard photograph obtained within the last 6 months (from authorized provider)",
+      "Completed Form D.R.P/1 — download from drp.gov.lk or collect at Divisional Secretariat",
       "Parent/Guardian's NIC (if applicant is under 18)",
-      "School certificate or principal's letter (if aged 16–17)"
+      "School certificate or principal's letter (if aged 16–17)",
+      "Receipt of application fee payment"
     ],
     "steps": [
-      "Download Form NIC 1 from drp.gov.lk or collect it at your nearest Divisional Secretariat",
-      "Gather all required documents (originals + photocopies)",
-      "Visit your nearest Divisional Secretariat or DRP Head Office — go early and get a token",
-      "Submit documents and have your photograph and fingerprints captured on-site",
-      "Collect your Smart NIC in 3–4 weeks (standard) or 3 working days (priority)"
+      "Download Form D.R.P/1 from drp.gov.lk or collect it at your nearest Divisional Secretariat",
+      "Gather all required documents (originals + photocopies as requested)",
+      "Visit your nearest Divisional Secretariat or DRP Head Office (Battaramulla) and submit the application",
+      "Photograph and fingerprints are captured on-site",
+      "Normal service: NIC is mailed to your address within approximately 3 months",
+      "One Day Service: NIC can be collected within about 3 hours (additional fee applies)"
     ],
     "fees": {
-      "standard_first_time": "Free",
-      "priority": "LKR 1,000"
+      "first_issue": "LKR 200",
+      "one_day_service": "LKR 2,000 (in addition to base fee)",
+      "late_application_penalty": "LKR 2,500 (if not applied within prescribed time after age 15)"
     },
-    "processing_time": "3–4 weeks (standard), 3 working days (priority)",
-    "online_available": false,
+    "processing_time": "Normal: ~3 months (mailed). One Day Service: ~3 hours",
+    "online_available": true,
     "online_url": "https://drp.gov.lk",
+    "source_url": "https://drp.gov.lk/en/normal.php",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Bring photocopies of all documents in addition to originals — officers will ask for them",
-      "Arrive before 8:30 AM to get a token — queues fill up fast",
-      "The Smart NIC (chip card) is now standard issue — it's needed for almost every other service",
-      "Divisional Secretariats are generally faster than the DRP head office"
+      "DRP Head Office is at Suhurupaya, Battaramulla — not the old Maligawatte address",
+      "First-time NIC fee is LKR 200 — not free",
+      "Divisional Secretariats handle most applications island-wide",
+      "One Day Service costs LKR 2,000 extra and is processed in about 3 hours"
     ],
     "common_mistakes": [
+      "Going to the outdated Maligawatte Colombo 10 address",
       "Bringing a photocopy of the birth certificate instead of the original",
-      "Photos with coloured or patterned backgrounds — must be plain white",
-      "Filling Form NIC 1 in lowercase — must be block capitals",
-      "Going without a token — the system is token-based, you cannot just walk up"
+      "Using Form names incorrectly — first application uses Form D.R.P/1",
+      "Expecting free issuance — government fee is LKR 200 for first issue"
     ]
   },
   {
@@ -54,33 +59,35 @@
     "description": "Replace a lost, damaged, or stolen NIC, or update your name, address, or other personal details.",
     "department": "Department for Registration of Persons (DRP)",
     "offices": [
-      { "name": "DRP Head Office", "address": "No. 10, Regent Street, Maligawatte, Colombo 10", "phone": "+94 11 2323030" },
+      { "name": "DRP Head Office", "address": "10th Floor, Suhurupaya, Sri Subhuthipura Road, Battaramulla", "phone": "+94 11 5226100" },
       { "name": "Any Divisional Secretariat Office", "address": "Island-wide", "phone": "N/A" }
     ],
     "documents_required": [
-      "Completed Form NIC 2 (for lost/damaged replacement) — from DS office or drp.gov.lk",
-      "Completed Form NIC 3 (for change of particulars only)",
-      "Police report (mandatory for lost NIC — file this first)",
+      "Completed application for replacement (lost/damaged) or amendment (change of particulars) — from drp.gov.lk or DS office",
+      "Police report (mandatory for lost NIC — file at nearest police station immediately)",
       "Original damaged NIC (if damaged, not lost)",
       "Original Birth Certificate",
-      "Two recent passport-size photographs (35mm × 45mm, white background)",
-      "Affidavit from a Justice of the Peace (JP) if reporting loss"
+      "ICAO-standard photograph within 6 months",
+      "Affidavit or supporting documents as required for loss reports"
     ],
     "steps": [
-      "If lost: Immediately file a police report at your nearest police station",
-      "Get an affidavit from a Justice of the Peace (JP) if required",
-      "Download or collect Form NIC 2 (replacement) or NIC 3 (changes)",
-      "Gather documents including the police report and birth certificate",
-      "Visit your Divisional Secretariat or DRP office and submit all documents",
-      "Pay the replacement fee and collect new NIC after the processing period"
+      "If lost: file a police report at your nearest police station without delay",
+      "Download or collect the correct replacement/amendment form from drp.gov.lk or Divisional Secretariat",
+      "Gather documents including police report (for loss) and birth certificate",
+      "Visit Divisional Secretariat or DRP Head Office (Battaramulla) and submit application with fee",
+      "Normal service: receive NIC by mail in ~3 months; One Day Service: ~3 hours"
     ],
     "fees": {
-      "standard": "LKR 500",
-      "priority": "LKR 1,500"
+      "amended_nic": "LKR 500",
+      "lost_nic_replacement": "LKR 1,000",
+      "one_day_service": "LKR 2,000 (additional)",
+      "registered_post": "LKR 120 (optional mailing fee)"
     },
-    "processing_time": "3–4 weeks (standard), 3 working days (priority)",
-    "online_available": false,
+    "processing_time": "Normal: ~3 months (mailed). One Day Service: ~3 hours",
+    "online_available": true,
     "online_url": "https://drp.gov.lk",
+    "source_url": "https://drp.gov.lk/en/normal.php",
+    "last_verified": "2026-06-19",
     "tips": [
       "File the police report on the same day you discover the NIC is lost",
       "Keep a photocopy of your NIC at home — it makes the replacement process much faster",
@@ -97,7 +104,7 @@
     "sinhala": "විදේශ ගමන් බලපත්‍රය — නව අයදුම්",
     "category": "Travel",
     "emoji": "🛂",
-    "description": "Apply for your first Sri Lankan passport. Valid for 10 years for adults, 5 years for children under 16.",
+    "description": "Apply for your first Sri Lankan passport. Valid 10 years for adults; children under 16 may receive 3-year or 10-year validity.",
     "department": "Department of Immigration and Emigration",
     "offices": [
       { "name": "Head Office — Suhurupaya", "address": "\"Suhurupaya\", Sri Subhuthipura Road, Battaramulla", "phone": "1962 / +94 11 210 1500" },
@@ -205,44 +212,50 @@
     "sinhala": "රිය පැදවීමේ බලපත්‍රය — ශිෂ්‍ය බලපත්‍රය",
     "category": "Vehicles",
     "emoji": "🚗",
-    "description": "The mandatory first step before getting a full driving license. You must practice for at least 6 months while displaying an 'L' plate.",
+    "description": "First step to a full driving licence. Register for the written test from age 17; learner permit valid up to 18 months. Minimum 3 months on learner permit before practical test for light vehicles (age 18+).",
     "department": "Department of Motor Traffic (DMT)",
     "offices": [
-      { "name": "Head Office", "address": "341, Alvitigala Mawatha, Narahenpita, Colombo 05", "phone": "+94 112 033333" },
-      { "name": "Werahera Branch", "address": "Werahera, Homagama", "phone": "+94 112 518 926" }
+      { "name": "Head Office", "address": "341, Dr. Danister De Silva Mawatha (Alvitigala Mawatha), Narahenpita, Colombo 05", "phone": "+94 11 2033333" },
+      { "name": "Werahera Branch", "address": "DMT Office, Werahera, Boralesgamuwa", "phone": "+94 11 2518926" }
     ],
     "documents_required": [
-      "National Identity Card (NIC) — original and photocopy (must be 18 years or older)",
-      "Two recent passport-size photographs",
-      "Medical Certificate from a DMT-approved medical officer (Form DMT 6)",
-      "Completed application form (Form B23) — available at DMT offices or dmt.gov.lk",
-      "Payment receipt for the learner's license fee"
+      "National Identity Card (NIC) — original (must be 17+ to sit written test; 18+ for practical)",
+      "Medical fitness certificate from National Transport Medical Institute (NTMI) — valid 6 months",
+      "Completed DMT application forms",
+      "Payment receipt for learner permit / new licence levy"
     ],
     "steps": [
-      "Book an appointment at dmtappointments.dmt.gov.lk — select 'New Driving Licence'",
-      "Get your medical certificate from a DMT-approved doctor (list available at dmt.gov.lk)",
-      "Fill in Form B23 and prepare all documents",
-      "Attend your DMT appointment with all documents",
-      "Sit and pass the Theory Test — computer-based multiple choice questions on the Highway Code",
-      "Pay the fee and collect your Learner's License on the same day if you pass",
-      "Display an 'L' plate on your vehicle at all times while practicing"
+      "Book appointment at dmtappointments.dmt.gov.lk — select new driving licence",
+      "Obtain medical certificate from NTMI (list on dmt.gov.lk) — valid 6 months",
+      "Attend appointment and pass the computer-based written theory test (Highway Code)",
+      "Pay levy: LKR 2,500 (1 class), LKR 3,000 (2 classes), or LKR 3,500 (3+ classes) — normal service",
+      "Receive learner's permit — display 'L' plates when practising",
+      "Hold learner permit minimum 3 months before practical test (light vehicles); then book practical test for full licence"
     ],
     "fees": {
-      "learners_license": "approximately LKR 1,500–2,000 (varies by vehicle class)"
+      "learner_and_new_licence_1_class_normal": "LKR 2,500",
+      "learner_and_new_licence_2_classes_normal": "LKR 3,000",
+      "learner_and_new_licence_3_plus_classes_normal": "LKR 3,500",
+      "same_day_service_surcharge": "Add LKR 1,000 per category (e.g. 1 class same-day LKR 3,500)",
+      "written_test_re_sit": "LKR 500",
+      "l_plates_large": "LKR 1,000",
+      "l_plates_small": "LKR 500"
     },
-    "processing_time": "Same day (issued immediately upon passing the theory test)",
+    "processing_time": "Same day upon passing written test",
     "online_available": true,
     "online_url": "https://dmtappointments.dmt.gov.lk",
+    "source_url": "https://dmt.gov.lk/index.php?Itemid=170&id=85&lang=en&option=com_content&view=article",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Study the Highway Code of Sri Lanka carefully — available at bookshops and online",
-      "Your medical certificate must come from a DMT-approved doctor — non-approved certificates are rejected",
-      "A learner's license is valid for up to 3 years — plenty of time to practice",
-      "Book your appointment online to avoid wasting hours at the DMT office"
+      "Written test available from age 17; practical test for light vehicles from age 18 after 3 months on learner permit",
+      "Medical certificate must be from NTMI — not any private doctor",
+      "Learner permit valid up to 18 months",
+      "Heavy vehicle classes have higher age minimums (20–21) — see dmt.gov.lk"
     ],
     "common_mistakes": [
-      "Not studying the Highway Code and failing the theory test on the first attempt",
-      "Getting a medical certificate from a doctor not on the DMT approved list",
-      "Bringing only a photocopy of the NIC — the original is required"
+      "Thinking you need 6 months on learner permit — minimum is 3 months for light vehicles",
+      "Medical certificate from non-NTMI doctor — will be rejected",
+      "Underestimating theory test — study the Highway Code thoroughly"
     ]
   },
   {
@@ -251,43 +264,45 @@
     "sinhala": "රිය පැදවීමේ බලපත්‍රය — සම්පූර්ණ බලපත්‍රය",
     "category": "Vehicles",
     "emoji": "🚗",
-    "description": "Obtain your full driving license after holding a learner's license for at least 6 months and passing a practical driving test.",
+    "description": "Obtain a full driving licence after holding a valid learner's permit for at least 3 months (light vehicles) and passing the practical driving test.",
     "department": "Department of Motor Traffic (DMT)",
     "offices": [
-      { "name": "Head Office", "address": "341, Alvitigala Mawatha, Narahenpita, Colombo 05", "phone": "+94 112 033333" },
-      { "name": "Werahera Branch", "address": "Werahera, Homagama", "phone": "+94 112 518 926" }
+      { "name": "Head Office", "address": "341, Dr. Danister De Silva Mawatha, Narahenpita, Colombo 05", "phone": "+94 11 2033333" },
+      { "name": "Werahera Branch", "address": "DMT Office, Werahera, Boralesgamuwa", "phone": "+94 11 2518926" }
     ],
     "documents_required": [
-      "Valid Learner's License (must have held it for minimum 6 months)",
-      "National Identity Card (NIC) — original and photocopy",
-      "Two recent passport-size photographs",
-      "Medical Certificate from a DMT-approved medical officer (Form DMT 6)",
-      "Completed application form for full license — available at DMT office"
+      "Valid learner's permit (minimum 3 months old for light vehicle classes)",
+      "National Identity Card (NIC) — original",
+      "Medical fitness certificate from NTMI — issued within last 6 months",
+      "Roadworthy vehicle for the practical test class",
+      "Payment receipt for applicable DMT levies"
     ],
     "steps": [
-      "Ensure you have held your learner's license for at least 6 months",
-      "Book an appointment at dmtappointments.dmt.gov.lk — select 'New Driving Licence'",
-      "Get a fresh medical certificate from a DMT-approved doctor",
-      "Arrive at the DMT office with your vehicle and all documents",
-      "Pass the practical driving test — conducted by a DMT examiner on public roads",
-      "Pay the fee and collect your full driving license same day"
+      "Confirm learner's permit is at least 3 months old (light vehicles) and you meet minimum age (18 for light vehicles)",
+      "Book appointment at dmtappointments.dmt.gov.lk",
+      "Obtain fresh NTMI medical certificate if expired",
+      "Attend with your vehicle and pass the practical road test with DMT examiner",
+      "Pay fees and receive smart-card driving licence same day if passed"
     ],
     "fees": {
-      "full_license": "approximately LKR 2,000–3,000 (varies by vehicle class)"
+      "practical_test_re_sit_normal": "LKR 1,000",
+      "practical_test_re_sit_same_day": "LKR 2,500",
+      "note": "Full licence issue levies follow same schedule as new licence application — see dmt.gov.lk Schedule I"
     },
-    "processing_time": "Same day (if practical test is passed)",
+    "processing_time": "Same day if practical test passed",
     "online_available": true,
     "online_url": "https://dmtappointments.dmt.gov.lk",
+    "source_url": "https://dmt.gov.lk/index.php?Itemid=164&id=48&lang=en&option=com_content&view=article",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Practice in a variety of conditions including hills, busy roads, and reversing",
-      "The examiner will test: hill starts, reversing, parking, lane discipline, and road signs",
-      "Enrol in a registered driving school — instructors know exactly what the examiner looks for",
-      "Bring a well-maintained vehicle — bald tyres or broken lights will fail the vehicle check"
+      "Minimum learner period is 3 months for light vehicles — not 6 months",
+      "Vehicle must be roadworthy — lights, horn, tyres checked before test",
+      "Enrol at a registered driving school to learn examiner expectations"
     ],
     "common_mistakes": [
-      "Appearing before the 6-month learner's license period is complete — you will be turned away",
-      "Practising only in quiet areas and then struggling on busy roads during the test",
-      "Vehicle not in roadworthy condition — check lights, horn, and tyres beforehand"
+      "Appearing before 3-month learner period ends",
+      "Vehicle fails roadworthiness check on test day",
+      "Using expired NTMI medical certificate"
     ]
   },
   {
@@ -296,40 +311,44 @@
     "sinhala": "රිය පැදවීමේ බලපත්‍ර අලුත් කිරීම",
     "category": "Vehicles",
     "emoji": "🚗",
-    "description": "Renew your expired or expiring driving license.",
+    "description": "Renew or extend the validity period of your driving licence.",
     "department": "Department of Motor Traffic (DMT)",
     "offices": [
-      { "name": "Head Office", "address": "341, Alvitigala Mawatha, Narahenpita, Colombo 05", "phone": "+94 112 033333" },
-      { "name": "Werahera Branch", "address": "Werahera, Homagama", "phone": "+94 112 518 926" }
+      { "name": "Head Office", "address": "341, Dr. Danister De Silva Mawatha, Narahenpita, Colombo 05", "phone": "+94 11 2033333" },
+      { "name": "Werahera Branch", "address": "DMT Office, Werahera, Boralesgamuwa", "phone": "+94 11 2518926" }
     ],
     "documents_required": [
-      "Current/expired driving license — original",
-      "National Identity Card (NIC) — original and photocopy",
-      "Two recent passport-size photographs",
-      "Medical Certificate from a DMT-approved doctor (required for heavy vehicle licenses and drivers over 70)",
-      "Completed renewal application form"
+      "Current or expired driving licence — original",
+      "National Identity Card (NIC) or valid passport with NIC number",
+      "Medical fitness certificate from NTMI — within last 6 months (required for renewal/extension)",
+      "Payment receipt for renewal levy"
     ],
     "steps": [
-      "Book an appointment at dmtappointments.dmt.gov.lk — select 'Driving Licence Renewal'",
-      "Gather all documents — medical certificate if applicable",
-      "Visit DMT on your appointment date and submit documents",
-      "Pay the renewal fee",
-      "Collect your renewed license — usually same day"
+      "Book appointment at dmtappointments.dmt.gov.lk — Driving Licence Renewal",
+      "Obtain NTMI medical certificate if required",
+      "Attend DMT on appointment date with licence and NIC",
+      "Pay renewal levy and collect renewed smart-card licence — usually same day"
     ],
     "fees": {
-      "renewal": "approximately LKR 1,000–2,000 (varies by class and renewal period)"
+      "renewal_one_period_normal": "LKR 2,800",
+      "renewal_one_period_same_day": "LKR 4,000",
+      "lapsed_penalty_up_to_1_year": "LKR 500 (additional)",
+      "duplicate_lost_licence": "LKR 7,800 (plus lapsed penalty if applicable)"
     },
     "processing_time": "Same day",
     "online_available": true,
     "online_url": "https://dmtappointments.dmt.gov.lk",
+    "source_url": "https://dmt.gov.lk/index.php?Itemid=165&id=49&lang=en&option=com_content&view=article",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Renew before it expires to avoid late fees",
-      "Heavy vehicle (bus, truck) licenses always require a medical certificate for renewal",
-      "Driving with an expired license is an offence — renew promptly"
+      "Renew before expiry to avoid LKR 500 lapsed-period penalty (if lapsed ≤1 year)",
+      "NTMI medical certificate required — valid 6 months",
+      "Driving with expired licence is an offence"
     ],
     "common_mistakes": [
-      "Waiting until the license has been expired for months — late penalties accumulate",
-      "Not bringing the original expired license"
+      "Not bringing NTMI medical certificate",
+      "Ignoring lapsed-period penalty when licence expired",
+      "Medical certificate from non-NTMI provider"
     ]
   },
   {
@@ -341,33 +360,39 @@
     "description": "Obtain a certified copy of your birth certificate. This is one of the most fundamental documents — required for NIC, passport, marriage, and more.",
     "department": "Registrar General's Department (RGD)",
     "offices": [
-      { "name": "RGD Head Office", "address": "234, Deans Road, Colombo 10", "phone": "+94 11 2694001" },
-      { "name": "Divisional Secretariat (where birth was registered)", "address": "Your birth district's Divisional Secretariat", "phone": "N/A" }
+      { "name": "RGD Head Office", "address": "No. 234/A3, Denzil Kobbekaduwa Mawatha, Battaramulla", "phone": "+94 11 288 9488" },
+      { "name": "Divisional Secretariat Registrar Division", "address": "Registrar division at DS where birth was registered — or any DS if record is in eBMD", "phone": "N/A" }
     ],
     "documents_required": [
       "National Identity Card (NIC) of the applicant",
-      "Any previous copy of the birth certificate if available (for reference — not mandatory)",
-      "Written application with your full name, date of birth, place of birth, and parents' full names"
+      "Birth certificate number and date of registration (if known — reduces fee)",
+      "Completed application form (at DS or online eBMD)"
     ],
     "steps": [
-      "Visit the Divisional Secretariat where your birth was originally registered (fastest), or the RGD Head Office in Colombo (any district)",
-      "Submit a written application with your details and pay the fee at the counter",
-      "Collect the certified copy — usually issued same day at DS offices"
+      "Check if your record is in eBMD (1960–2020) at nearest Divisional Secretariat",
+      "Option A — Online: apply at https://online.ebmd.rgd.gov.lk, pay via link sent within 2 days, receive by post or collect at DS (~5 working days)",
+      "Option B — In person: visit DS Registrar Division with NIC and pay fee at counter (or BOC Battaramulla acct 7039827 with receipt)",
+      "Collect certified copy — same day at DS if record is in database"
     ],
     "fees": {
-      "certified_copy": "LKR 200–300 per copy"
+      "certified_copy_number_known": "LKR 120 per copy",
+      "certified_copy_search_required": "LKR 250 (first copy if number/date unknown; additional copies LKR 120)"
     },
-    "processing_time": "Same day (DS offices), 1–3 days (RGD Head Office)",
-    "online_available": false,
-    "online_url": "https://www.rgd.gov.lk",
+    "processing_time": "Same day at DS (in database); ~5 working days online",
+    "online_available": true,
+    "online_url": "https://online.ebmd.rgd.gov.lk",
+    "source_url": "https://www.rgd.gov.lk/web/index.php/en/services/civil-registration/birth/obtain-certified-copies-translations",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Get multiple copies in one visit — you will need them for NIC, passport, marriage, job applications",
-      "You can request a copy from any DS office island-wide, but it is faster at the one in your birth district",
-      "Birth certificates are in Sinhala/Tamil — if you need an English version for overseas use, request a translated copy"
+      "RGD Head Office moved to Battaramulla — not Deans Road Colombo 10",
+      "Official fee is LKR 120 per copy when number and date are known",
+      "eBMD online portal: online.ebmd.rgd.gov.lk",
+      "Records from 1960–2020 may be available at any DS via eBMD"
     ],
     "common_mistakes": [
-      "Going to the wrong DS office — find the one that covers the area where you were born, not where you currently live",
-      "Not bringing your NIC — required to verify identity before issuing"
+      "Quoting outdated LKR 200–300 fees — official fee is LKR 120",
+      "Going to old RGD Colombo 10 address",
+      "Not knowing certificate number — triggers LKR 250 search fee"
     ]
   },
   {
@@ -379,37 +404,43 @@
     "description": "Register a civil marriage and obtain a marriage certificate through the Registrar General's Department.",
     "department": "Registrar General's Department (RGD) / Divisional Secretariat",
     "offices": [
-      { "name": "Any Divisional Secretariat Office", "address": "Island-wide", "phone": "N/A" },
-      { "name": "RGD Head Office", "address": "234, Deans Road, Colombo 10", "phone": "+94 11 2694001" }
+      { "name": "Marriage Registrar — Divisional Secretariat", "address": "Island-wide (341 DS registrar divisions)", "phone": "N/A" },
+      { "name": "RGD Head Office", "address": "No. 234/A3, Denzil Kobbekaduwa Mawatha, Battaramulla", "phone": "+94 11 288 9488" }
     ],
     "documents_required": [
       "NICs of both parties — originals",
       "Birth Certificates of both parties — originals",
-      "Two witnesses who are 18 or older, each with their own NIC",
-      "Divorce Certificate or Death Certificate of deceased spouse (if either party was previously married)",
-      "Notice of Intended Marriage form — filed 14 days before the ceremony"
+      "Two witnesses aged 18+ with their NICs",
+      "Divorce Certificate or Death Certificate of deceased spouse (if previously married)",
+      "Notice of Marriage in duplicate — certified"
     ],
     "steps": [
-      "File Notice of Intended Marriage at your local Divisional Secretariat at least 14 days before the intended date",
-      "On the registration date, both parties and both witnesses must appear in person before the Registrar",
-      "Sign the marriage register in the presence of the Registrar",
-      "Pay the registration fee and receive your Marriage Certificate"
+      "Submit written Notice of Marriage to the Marriage Registrar at your Divisional Secretariat",
+      "Pay notice entry fee (LKR 120) — 14 days must elapse before registration",
+      "Both parties and witnesses appear on registration date (within 3 months of notice)",
+      "Pay solemnization fee (LKR 900) and receive Marriage Certificate",
+      "Register marriage at DS Registrar office — certificate issued same day"
     ],
     "fees": {
-      "registration": "LKR 300–500",
-      "certified_copy": "LKR 200–300 per copy"
+      "notice_of_marriage": "LKR 120",
+      "solemnization_at_registrar_office": "LKR 900",
+      "registrar_certificate": "LKR 120",
+      "special_license_before_14_days": "LKR 120 (additional)"
     },
-    "processing_time": "Certificate issued on the same day as registration",
-    "online_available": false,
-    "online_url": "https://www.rgd.gov.lk",
+    "processing_time": "Certificate on registration day (after 14-day notice period)",
+    "online_available": true,
+    "online_url": "https://online.ebmd.rgd.gov.lk",
+    "source_url": "https://www.rgd.gov.lk/web/index.php/en/services/civil-registration/marriage/marriage-registration",
+    "last_verified": "2026-06-19",
     "tips": [
-      "The 14-day notice period is a legal requirement — you cannot waive it",
-      "Religious marriages (Buddhist, Christian, Hindu, Muslim) have separate registration processes through registered officeholders",
-      "Get multiple certified copies on registration day — you will need them for name changes, bank updates, and passport renewal"
+      "14-day notice is legally required — special license (LKR 120) needed to marry sooner",
+      "Registration must occur within 3 months of notice or a new notice is required",
+      "Certified copies of marriage certificate available via eBMD (LKR 120 if details known)"
     ],
     "common_mistakes": [
-      "Not giving 14 days notice — registration cannot proceed without it",
-      "Witnesses forgetting to bring their own NICs on the day"
+      "Not allowing 14 days after notice",
+      "Missing the 3-month registration window after notice",
+      "Witnesses without NICs on the day"
     ]
   },
   {
@@ -421,39 +452,41 @@
     "description": "Official certificate confirming you have no criminal record in Sri Lanka. Required for overseas employment, visa applications, migration, and certain government and private jobs.",
     "department": "Sri Lanka Police",
     "offices": [
-      { "name": "Police HQ E-Services", "address": "Online: police.lk | Police HQ, Colombo 02", "phone": "+94 11 2421111" },
-      { "name": "Your nearest Police Station", "address": "Island-wide", "phone": "N/A" }
+      { "name": "Police Clearance — Online", "address": "https://www.police.lk → E-Services → Clearance Certificates", "phone": "071 8592990 (WhatsApp)" },
+      { "name": "Police Headquarters", "address": "Police Headquarters, Colombo 02", "phone": "+94 11 2421111" }
     ],
     "documents_required": [
-      "National Identity Card (NIC) — original and photocopy",
-      "Two recent passport-size photographs",
-      "Written application letter stating the purpose (e.g., 'for overseas employment in Australia')",
-      "Passport — original and photocopy (required for overseas applications)",
-      "Payment receipt for the fee"
+      "Clear scan of National Identity Card (both sides)",
+      "Valid passport copy (especially for overseas purposes)",
+      "Correct email address for status updates",
+      "Debit/credit card for online payment"
     ],
     "steps": [
-      "Visit the Sri Lanka Police e-services portal at police.lk for online application, or go to your nearest police station",
-      "Submit your application letter, NIC, photographs, and payment",
-      "A background check is conducted — this takes 7–14 working days",
-      "Collect the certificate at the police station or receive it via email (online applications)"
+      "Visit www.police.lk → E-Services → Clearance Certificates → Apply Online",
+      "Complete the online application with accurate NIC and passport details",
+      "Pay fee online by card — applications with invalid NIC/passport scans are rejected without refund",
+      "Background check conducted — certificate issued to Sri Lankan address by registered post",
+      "Overseas residents: fee LKR 5,100; may apply via embassy or online per police.lk instructions"
     ],
     "fees": {
-      "standard": "approximately LKR 300–500",
-      "urgent": "higher fee — contact police station for current rate"
+      "online_application": "As per police.lk payment gateway (overseas applicants: LKR 5,100 cited on police.lk)",
+      "local_employment_certificate_at_station": "LKR 25 (separate local employment certificate — different service)"
     },
-    "processing_time": "7–14 working days",
+    "processing_time": "Approximately 14 days (overseas); varies for local online applications",
     "online_available": true,
-    "online_url": "https://www.police.lk",
+    "online_url": "https://www.police.lk/?page_id=907",
+    "source_url": "https://www.police.lk/?p=21493",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Apply at least 3 weeks before you need it — 2 weeks processing plus buffer",
-      "The certificate is typically valid for 6 months — check the validity requirement of the receiving country",
-      "Some countries (Australia, Canada, UK) require the certificate to be apostilled — contact the Ministry of Foreign Affairs for apostille",
-      "Apply online to save a trip to the police station"
+      "Clearance applications are online-only via police.lk — walk-in at HQ is not the primary process",
+      "Use a valid Sri Lankan postal address for delivery by registered post",
+      "WhatsApp support: 071 8592990 | clearance@police.gov.lk",
+      "Some countries require apostille after clearance — Ministry of Foreign Affairs"
     ],
     "common_mistakes": [
-      "Applying too late — 2 weeks processing time catches many people off guard",
-      "Not stating the specific purpose — the certificate must state why it was issued",
-      "Not knowing your police clearance needs an apostille for certain countries"
+      "Blurry NIC/passport scans — application rejected without refund",
+      "Wrong email address — miss rejection notices",
+      "Confusing local LKR 25 employment certificate with formal Police Clearance Certificate"
     ]
   },
   {
@@ -465,8 +498,8 @@
     "description": "Register a brand new or imported vehicle in Sri Lanka for the first time to receive a registration number and the vehicle registration book (log book).",
     "department": "Department of Motor Traffic (DMT)",
     "offices": [
-      { "name": "Head Office", "address": "341, Alvitigala Mawatha, Narahenpita, Colombo 05", "phone": "+94 112 033333" },
-      { "name": "Werahera Branch", "address": "Werahera, Homagama", "phone": "+94 112 518 926" }
+      { "name": "Head Office", "address": "341, Dr. Danister De Silva Mawatha, Narahenpita, Colombo 05", "phone": "+94 11 2033333" },
+      { "name": "Werahera Branch", "address": "DMT Office, Werahera, Boralesgamuwa", "phone": "+94 11 2518926" }
     ],
     "documents_required": [
       "Invoice from the dealer or supplier",
@@ -489,10 +522,12 @@
     "processing_time": "1–3 working days",
     "online_available": true,
     "online_url": "https://dmtappointments.dmt.gov.lk",
+    "source_url": "https://dmt.gov.lk",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Reputable dealers usually handle first registration for brand new vehicles — confirm with them",
-      "For imports: customs clearance must be completely done before DMT registration",
-      "Insurance from an approved Sri Lankan insurer is non-negotiable"
+      "TIN (Tax Identification Number) may be required for vehicle registration transfers — check dmt.gov.lk",
+      "Reputable dealers often handle first registration for new vehicles",
+      "Insurance from approved Sri Lankan insurer is mandatory before registration"
     ],
     "common_mistakes": [
       "Arriving without insurance — registration will not proceed",
@@ -505,11 +540,11 @@
     "sinhala": "ආදායම් බලපත්‍රය (OR)",
     "category": "Vehicles",
     "emoji": "🚘",
-    "description": "The annual road tax disc (Revenue License / OR) required for every motor vehicle on public roads. Must be renewed by January 31 every year.",
-    "department": "Provincial / Local Authority (Municipal Council, Urban Council, or Pradeshiya Sabha)",
+    "description": "Annual revenue licence (road tax disc) required for all motor vehicles on public roads. Renew annually — peak demand December–January.",
+    "department": "Department of Motor Traffic (for online) / Local Authority (Municipal Council, UC, Pradeshiya Sabha)",
     "offices": [
-      { "name": "Your Local Municipal Council or Pradeshiya Sabha", "address": "Based on vehicle registration address", "phone": "N/A" },
-      { "name": "Some Divisional Secretariats", "address": "Island-wide", "phone": "N/A" }
+      { "name": "Local Municipal Council or Pradeshiya Sabha", "address": "Based on vehicle registration address", "phone": "Varies" },
+      { "name": "DMT online revenue licence", "address": "https://revenuelicence.dmt.gov.lk", "phone": "N/A" }
     ],
     "documents_required": [
       "Previous year's Revenue License (OR) or the Vehicle Registration Certificate (log book)",
@@ -528,12 +563,14 @@
       "varies": "LKR 2,000–15,000+ depending on vehicle type and engine capacity"
     },
     "processing_time": "Same day",
-    "online_available": false,
-    "online_url": "N/A",
+    "online_available": true,
+    "online_url": "https://revenuelicence.dmt.gov.lk",
+    "source_url": "https://dmt.gov.lk",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Renew before December 31 to avoid penalties — technically due by January 31 but queues spike then",
-      "Some banks and payment agents now accept revenue license payments — call your local authority",
-      "Book the emission test well in advance — VET centres get very busy in December/January"
+      "Online renewal available at revenuelicence.dmt.gov.lk in many areas",
+      "Get VET emission test and insurance renewed before applying",
+      "Renew early in December to avoid January queues and penalties"
     ],
     "common_mistakes": [
       "Getting the emission test at an uncertified garage — it will not be accepted",
@@ -576,7 +613,9 @@
     },
     "processing_time": "1–7 days depending on certificate type",
     "online_available": false,
-    "online_url": "N/A",
+    "online_url": "https://www.egov.lk",
+    "source_url": "https://www.egov.lk",
+    "last_verified": "2026-06-19",
     "tips": [
       "Find your GN officer's schedule first — they visit the office on specific days, not every day",
       "The Residency Certificate is one of the most commonly requested — keep a few copies handy",
@@ -593,38 +632,43 @@
     "sinhala": "ඡන්දදායක ලියාපදිංචිය",
     "category": "Civic",
     "emoji": "🗳️",
-    "description": "Register to vote for the first time or update your voter registration when you move to a new address.",
-    "department": "Elections Commission of Sri Lanka",
+    "description": "Register as an elector or update your registration when you move. Annual revision cycle with enumeration each year.",
+    "department": "Election Commission of Sri Lanka",
     "offices": [
-      { "name": "Elections Commission HQ", "address": "Sarana Mawatha, Rajagiriya", "phone": "+94 11 2868441" },
-      { "name": "Your local Grama Niladhari officer", "address": "Island-wide", "phone": "N/A" },
-      { "name": "Any Divisional Secretariat", "address": "Island-wide", "phone": "N/A" }
+      { "name": "Election Commission HQ", "address": "Sarana Mawatha, Rajagiriya", "phone": "+94 11 2868441" },
+      { "name": "District Elections Office", "address": "In each district", "phone": "Varies" },
+      { "name": "Grama Niladhari / Enumeration", "address": "Island-wide during annual revision", "phone": "N/A" }
     ],
     "documents_required": [
       "National Identity Card (NIC)",
-      "Completed Voter Registration Form A (Form 04) — from GN officer, DS office, or elections.gov.lk"
+      "Enumeration form (BC form) — completed during house-to-house enumeration",
+      "Claim forms A/B if correcting the electoral register during exhibition period"
     ],
     "steps": [
-      "Collect Form A (04) from your local GN officer, DS office, or download from elections.gov.lk",
-      "Fill in your full name, NIC number, current residential address, and electoral division",
-      "Submit to your GN officer or Divisional Secretariat",
-      "When the provisional electoral register is published, check online at elections.gov.lk that your details are correct",
-      "If anything is wrong, submit a formal objection within the published correction window"
+      "During annual revision, enumerator visits and you complete BC form with household details",
+      "Must be 18 by February 1 of the revision year and normally resident at the address",
+      "Provisional register exhibited in September for 28 days — check elections.gov.lk",
+      "Submit claim/objection forms (A, B, C, D) during exhibition if details are wrong",
+      "Supplementary registration available for those turning 18 mid-year (Feb–Jan windows)"
     ],
     "fees": {
-      "registration": "Free"
+      "registration": "Free",
+      "electoral_register_extract": "Prescribed fee at District Elections Office"
     },
-    "processing_time": "Electoral register updated annually — typically registration drives in September–November",
+    "processing_time": "Annual cycle — enumeration mid-year, register certified before elections",
     "online_available": true,
     "online_url": "https://elections.gov.lk",
+    "source_url": "https://elections.gov.lk/en/voters/voters_how_to_reg_as_voter_E.html",
+    "last_verified": "2026-06-19",
     "tips": [
-      "Check elections.gov.lk first to see if you are already registered",
-      "You must be registered at your CURRENT address to vote at your closest polling station",
-      "Registration drives happen in the last quarter of the year — act before October ends"
+      "Must be 18 by February 1 and normally resident at the address on that date",
+      "Check your registration online at elections.gov.lk during register exhibition",
+      "Update registration after moving — otherwise you vote at your old polling station"
     ],
     "common_mistakes": [
-      "Not updating registration after moving — you will still be registered at your old address and may have to travel to vote",
-      "Missing the annual registration window and being unable to vote at the next election"
+      "Not completing BC form during enumeration visit",
+      "Missing the September exhibition period to file corrections",
+      "Assuming NIC alone registers you — enumeration/claim process is required"
     ]
   }
 ]

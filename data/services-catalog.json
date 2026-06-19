@@ -15,7 +15,8 @@
       "a/l",
       "z-score",
       "admission"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "exam-dept-ol-al",
@@ -33,7 +34,8 @@
       "gce",
       "exam",
       "examinations"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "gce-certificate-request",
@@ -50,7 +52,8 @@
       "results",
       "gce",
       "transcript"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "school-transfer",
@@ -67,7 +70,8 @@
       "transfer",
       "student",
       "grade"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "scholarship-presidents",
@@ -84,7 +88,8 @@
       "president",
       "a/l",
       "merit"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "tvec-enrollment",
@@ -102,7 +107,8 @@
       "vocational",
       "training",
       "course"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "naita-equivalency",
@@ -119,7 +125,8 @@
       "equivalency",
       "naita",
       "recognition"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "teacher-registration",
@@ -136,7 +143,8 @@
       "education",
       "appointment",
       "training"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "pirivena-registration",
@@ -153,7 +161,8 @@
       "buddhist",
       "religious",
       "school"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "open-university-enrollment",
@@ -170,7 +179,8 @@
       "ousl",
       "distance",
       "degree"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "slmc-doctor-registration",
@@ -188,7 +198,8 @@
       "medical",
       "registration",
       "mbbs"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "nmra-drug-registration",
@@ -205,7 +216,8 @@
       "drug",
       "nmra",
       "pharmaceutical"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "hospital-patient-registration",
@@ -223,7 +235,8 @@
       "opd",
       "clinic",
       "health"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "ehis-health-insurance",
@@ -239,7 +252,8 @@
       "health insurance",
       "ehis",
       "medical cover"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "ayurveda-registration",
@@ -255,7 +269,8 @@
       "ayurveda",
       "traditional medicine",
       "practitioner"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "food-control-license",
@@ -273,7 +288,8 @@
       "restaurant",
       "phi",
       "health"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "birth-defect-registry",
@@ -290,7 +306,8 @@
       "congenital",
       "registry",
       "newborn"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "mental-health-services",
@@ -306,7 +323,8 @@
       "mental health",
       "psychiatry",
       "counselling"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "dental-council-registration",
@@ -322,7 +340,8 @@
       "dentist",
       "dental",
       "registration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "nursing-council-registration",
@@ -339,7 +358,8 @@
       "nursing",
       "midwife",
       "registration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "boi-registration",
@@ -356,7 +376,8 @@
       "investment",
       "export",
       "factory"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "import-license-customs",
@@ -374,7 +395,8 @@
       "clearance",
       "permit",
       "cargo"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "export-registration-edb",
@@ -391,7 +413,8 @@
       "edb",
       "exporter",
       "trade"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "trade-license-mc",
@@ -408,7 +431,8 @@
       "shop",
       "municipal",
       "business permit"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "nbt-registration",
@@ -425,7 +449,8 @@
       "tax",
       "business",
       "registration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "vat-registration",
@@ -442,7 +467,8 @@
       "tax",
       "ird",
       "registration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "svat-scheme",
@@ -459,7 +485,8 @@
       "vat",
       "export",
       "suspended"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "paye-registration",
@@ -476,7 +503,8 @@
       "employer",
       "salary tax",
       "withholding"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "stamp-duty-payment",
@@ -493,7 +521,8 @@
       "deed",
       "agreement",
       "notary"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "slsi-certification",
@@ -510,7 +539,8 @@
       "standards",
       "certification",
       "quality"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "tourism-license-sltda",
@@ -527,7 +557,8 @@
       "hotel",
       "travel agency",
       "sltda"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "liquor-license-excise",
@@ -545,7 +576,8 @@
       "excise",
       "license",
       "bar"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "sec-stock-broker",
@@ -563,7 +595,8 @@
       "cse",
       "shares",
       "broker"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "halal-certification",
@@ -580,7 +613,8 @@
       "certification",
       "food",
       "export"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "brand-trademark",
@@ -597,7 +631,8 @@
       "brand",
       "nipo",
       "intellectual property"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "cadastral-survey",
@@ -614,7 +649,8 @@
       "cadastral",
       "land plan",
       "subdivision"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "land-use-permit",
@@ -631,7 +667,8 @@
       "construction",
       "land use",
       "uda"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "condominium-registration",
@@ -648,7 +685,8 @@
       "apartment",
       "flat",
       "strata"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "partition-deed",
@@ -665,7 +703,8 @@
       "inheritance",
       "land split",
       "deed"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "valuation-department",
@@ -681,7 +720,8 @@
       "valuation",
       "property value",
       "assessment"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "samurdhi-benefits",
@@ -698,7 +738,8 @@
       "welfare",
       "poverty",
       "benefits"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "elderly-allowance",
@@ -715,7 +756,8 @@
       "pension",
       "allowance",
       "senior"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "disability-assistance",
@@ -732,7 +774,8 @@
       "handicap",
       "assistance",
       "wheelchair"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "kidney-patient-allowance",
@@ -749,7 +792,8 @@
       "ckdu",
       "dialysis",
       "allowance"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "fertilizer-subsidy",
@@ -766,7 +810,8 @@
       "farmer",
       "subsidy",
       "agriculture"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "farmers-pension",
@@ -782,7 +827,8 @@
       "farmer pension",
       "agriculture",
       "insurance"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "ranaviru-pension",
@@ -800,7 +846,8 @@
       "veteran",
       "pension",
       "army"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "widows-orphans-pension",
@@ -817,7 +864,8 @@
       "orphan",
       "pension",
       "death benefit"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "epf-employer-registration",
@@ -834,7 +882,8 @@
       "employer",
       "provident fund",
       "pension"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "epf-member-claim",
@@ -852,7 +901,8 @@
       "claim",
       "retirement",
       "provident"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "etf-employer",
@@ -868,7 +918,8 @@
       "etf",
       "employer",
       "trust fund"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "foreign-employment-slbf",
@@ -886,7 +937,8 @@
       "migrant",
       "overseas job",
       "manpower"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "work-permit-foreign",
@@ -903,7 +955,8 @@
       "foreign worker",
       "expat",
       "visa work"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "labour-dispute-commission",
@@ -921,7 +974,8 @@
       "dismissal",
       "wages",
       "tribunal"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "jobseeker-registration",
@@ -938,7 +992,8 @@
       "unemployment",
       "jobseeker",
       "career"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "factory-registration",
@@ -955,7 +1010,8 @@
       "workplace",
       "labour inspection",
       "osh"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "eta-tourist-visa",
@@ -972,7 +1028,8 @@
       "tourist visa",
       "visit",
       "immigration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "visa-extension",
@@ -988,7 +1045,8 @@
       "visa extension",
       "overstay",
       "immigration"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "residence-visa",
@@ -1005,7 +1063,8 @@
       "long stay",
       "immigration",
       "pr"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "dual-citizenship",
@@ -1022,7 +1081,8 @@
       "citizenship",
       "diaspora",
       "foreign passport"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "emigration-clearance",
@@ -1039,7 +1099,8 @@
       "clearance",
       "foreign job",
       "departure"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "citizenship-registration",
@@ -1055,7 +1116,8 @@
       "citizenship",
       "naturalization",
       "spouse"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "death-certificate",
@@ -1072,7 +1134,8 @@
       "death",
       "ebmd",
       "registrar"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "divorce-certificate",
@@ -1088,7 +1151,8 @@
       "divorce",
       "decree",
       "marriage dissolution"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "name-change-deed",
@@ -1104,7 +1168,8 @@
       "name change",
       "deed poll",
       "rename"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "adoption-registration",
@@ -1120,7 +1185,8 @@
       "adoption",
       "child",
       "guardian"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "notary-registration",
@@ -1137,7 +1203,8 @@
       "attestation",
       "deed",
       "justice"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "attorney-enrollment",
@@ -1154,7 +1221,8 @@
       "attorney",
       "bar",
       "legal practice"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "court-case-filing",
@@ -1172,7 +1240,8 @@
       "lawsuit",
       "filing",
       "magistrate"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "legal-aid-commission",
@@ -1189,7 +1258,8 @@
       "free lawyer",
       "poor",
       "assistance"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "bail-application",
@@ -1206,7 +1276,8 @@
       "arrest",
       "criminal",
       "court"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "ceb-electricity-connection",
@@ -1224,7 +1295,8 @@
       "power",
       "connection",
       "meter"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "nwsdb-water-connection",
@@ -1241,7 +1313,8 @@
       "nwsdb",
       "connection",
       "tap"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "telecom-license-trc",
@@ -1259,7 +1332,8 @@
       "license",
       "spectrum",
       "mobile"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "environmental-impact",
@@ -1276,7 +1350,8 @@
       "environment",
       "cea",
       "project approval"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "fishing-license",
@@ -1293,7 +1368,8 @@
       "boat",
       "fisheries",
       "license"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "army-recruitment",
@@ -1311,7 +1387,8 @@
       "air force",
       "military",
       "recruitment"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "police-complaint",
@@ -1329,7 +1406,8 @@
       "fir",
       "crime",
       "theft"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "firearm-license",
@@ -1346,7 +1424,8 @@
       "firearm",
       "license",
       "shotgun"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "railway-season-ticket",
@@ -1363,7 +1442,8 @@
       "railway",
       "season ticket",
       "commuter"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "port-customs-clearance",
@@ -1380,7 +1460,8 @@
       "cargo",
       "vehicle import",
       "clearance"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "gic-portal",
@@ -1398,7 +1479,8 @@
       "government services",
       "directory",
       "helpdesk"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "govpay-platform",
@@ -1415,7 +1497,8 @@
       "digital payment",
       "fine",
       "government payment"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "egram-swaraj",
@@ -1432,7 +1515,8 @@
       "gram niladhari",
       "digital certificate",
       "egov"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "rti-request",
@@ -1449,7 +1533,8 @@
       "freedom of information",
       "transparency",
       "request"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "consumer-affairs-complaint",
@@ -1467,7 +1552,8 @@
       "caa",
       "fraud",
       "pricing"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "farmer-registration",
@@ -1484,7 +1570,8 @@
       "paddy",
       "agriculture",
       "cultivation"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "coconut-development",
@@ -1500,7 +1587,8 @@
       "coconut",
       "estate",
       "agriculture"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "tea-smallholder-registration",
@@ -1517,7 +1605,8 @@
       "smallholder",
       "estate",
       "agriculture"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "nic-correction",
@@ -1534,7 +1623,8 @@
       "identity card",
       "name fix",
       "drp"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "birth-registration-late",
@@ -1550,7 +1640,8 @@
       "late birth",
       "birth registration",
       "unregistered"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "emergency-travel-document",
@@ -1566,7 +1657,8 @@
       "emergency passport",
       "travel document",
       "lost passport"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   },
   {
     "id": "visa-overstay-fine",
@@ -1582,6 +1674,7 @@
       "overstay",
       "visa fine",
       "immigration penalty"
-    ]
+    ],
+    "last_verified": "2026-06-19"
   }
 ]

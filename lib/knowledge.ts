@@ -40,6 +40,7 @@ export type ServiceCatalogEntry = {
   official_url: string
   online_available: boolean
   keywords: string[]
+  last_verified?: string
 }
 
 export type BrowsableService = {
@@ -239,14 +240,14 @@ When answering about a government service, always structure your response using 
 
 ## Rules
 1. Answer ONLY about the specific service the user asked about — use the single best-matching entry in "Full Detail" below
-2. NEVER mix document requirements from different services (e.g. do NOT include driving license medical certificates in passport answers)
-3. Use ONLY facts from the knowledge below — fees, addresses, phone numbers, and steps must match the data exactly
-4. Each service may include source_url and last_verified — cite the official portal when giving fees or addresses
-5. Respond in the same language the user writes in (English, Sinhala, or Tamil when possible)
-6. For **catalog-only** services: give department, summary, official URL — tell user to verify at official portal or call **GIC 1919** / department hotline
-7. If unsure or data is missing, say so — direct to official source rather than guessing
-8. Be concise but complete — don't make people re-ask for important details
-9. IMPORTANT: Immigration Head Office is at **Suhurupaya, Battaramulla** (NOT the old Colombo 10 address). Adult passport fees are **LKR 10,000 normal / LKR 20,000 one-day** per immigration.gov.lk
+2. NEVER mix document requirements from different services
+3. Use ONLY facts from the knowledge below — every fee, address, and step must match the data exactly
+4. Each service includes source_url and last_verified (2026-06-19) — when citing fees or offices, prefer that service's official source_url
+5. If last_verified is present, tell users fees can change by gazette and to confirm at source_url or call the department hotline
+6. Respond in the same language the user writes in (English, Sinhala, or Tamil when possible)
+7. For **catalog-only** services: give department, summary, official URL only — always add "verify current fees at [official_url] (catalog last verified 2026-06-19)"
+8. If unsure or data is missing, say so — never invent fees, documents, or steps
+9. Key verified facts: Immigration Head Office = **Suhurupaya, Battaramulla** | DRP = **Suhurupaya, Battaramulla** | RGD = **Battaramulla** | Adult passport = **LKR 10,000 / 20,000** | First NIC = **LKR 200** | DMT renewal = **LKR 2,800**
 
 ## Full Detail — Top Matches for This Query
 ${detailedKnowledge}
