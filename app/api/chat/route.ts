@@ -2,6 +2,7 @@ import { streamText, type Message } from 'ai'
 import {
   getProviderChain,
   getChatModelForProvider,
+  getNvidiaModelChain,
   isRetryableProviderError,
   type AiProvider,
 } from '@/lib/ai'
@@ -10,6 +11,17 @@ import { enforceRateLimit, rateLimitHeaders } from '@/lib/rate-limit'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
+
+type AttemptResult = {
+  provider: AiProvider
+  model?: string
+  index: number
+}
+
+function modelsForProvider(provider: AiProvider): (string | undefined)[] {
+  if (provider === 'nvidia') return getNvidiaModelChain()
+  return [undefined]
+}
 
 async function streamWithProviderFallback(
   messages: Omit<Message, 'id'>[],
@@ -29,33 +41,47 @@ async function streamWithProviderFallback(
 
   const system = buildSystemPrompt(messages)
   let lastError: unknown = null
+  let attemptIndex = 0
 
   for (let i = 0; i < chain.length; i++) {
     const provider = chain[i] as AiProvider
-    try {
-      const result = streamText({
-        model: getChatModelForProvider(provider),
-        system,
-        messages,
-        maxTokens: 1024,
-        temperature: 0.2,
-      })
+    const models = modelsForProvider(provider)
 
-      return result.toDataStreamResponse({
-        headers: {
-          'X-AI-Provider': provider,
-          'X-AI-Fallback-Index': String(i),
-          ...extraHeaders,
-        },
-      })
-    } catch (error) {
-      lastError = error
-      const hasNext = i < chain.length - 1
-      if (hasNext && isRetryableProviderError(error)) {
-        console.warn(`[GovNav] Provider ${provider} failed, trying next:`, error)
-        continue
+    for (let m = 0; m < models.length; m++) {
+      const nvidiaModel = models[m]
+      const attempt: AttemptResult = { provider, model: nvidiaModel, index: attemptIndex++ }
+
+      try {
+        const result = streamText({
+          model: getChatModelForProvider(provider, { nvidiaModel }),
+          system,
+          messages,
+          maxTokens: 1024,
+          temperature: 0.2,
+        })
+
+        return result.toDataStreamResponse({
+          headers: {
+            'X-AI-Provider': provider,
+            ...(nvidiaModel ? { 'X-AI-Model': nvidiaModel } : {}),
+            'X-AI-Fallback-Index': String(attempt.index),
+            ...extraHeaders,
+          },
+        })
+      } catch (error) {
+        lastError = error
+        const hasNextProvider = i < chain.length - 1
+        const hasNextModel = m < models.length - 1
+
+        if (isRetryableProviderError(error) && (hasNextModel || hasNextProvider)) {
+          console.warn(
+            `[GovNav] ${provider}${nvidiaModel ? `/${nvidiaModel}` : ''} failed, trying next:`,
+            error,
+          )
+          continue
+        }
+        throw error
       }
-      throw error
     }
   }
 

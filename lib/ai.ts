@@ -8,7 +8,19 @@ export type AiProvider = 'groq' | 'openrouter' | 'nvidia' | 'anthropic'
 export const GROQ_MODEL = 'llama-3.3-70b-versatile'
 export const OPENROUTER_MODEL = 'google/gemini-2.5-flash'
 export const OPENROUTER_FREE_MODEL = 'meta-llama/llama-3.3-70b-instruct:free'
+
+/** Primary NVIDIA NIM model — strong instruction-following for step-by-step govt guidance */
 export const NVIDIA_NIM_MODEL = 'meta/llama-3.3-70b-instruct'
+
+/**
+ * Default NVIDIA fallbacks (tried in order when primary is rate-limited or unavailable).
+ * - nemotron-super-49b: better reasoning for multi-step procedures
+ * - nemotron-3-nano-30b: faster, lighter fallback
+ */
+export const NVIDIA_NIM_FALLBACK_MODELS = [
+  'nvidia/llama-3.3-nemotron-super-49b-v1.5',
+  'nvidia/nemotron-3-nano-30b-a3b',
+] as const
 
 const groq = createGroq({
   apiKey: process.env.GROQ_API_KEY,
@@ -64,7 +76,19 @@ export function getActiveProvider(): AiProvider | null {
   return chain[0] ?? null
 }
 
-export function getChatModelForProvider(provider: AiProvider): LanguageModel {
+export function getNvidiaModelChain(): string[] {
+  const primary = process.env.NVIDIA_NIM_MODEL ?? NVIDIA_NIM_MODEL
+  const fromEnv = process.env.NVIDIA_NIM_FALLBACK_MODELS?.split(',')
+    .map((m) => m.trim())
+    .filter(Boolean)
+  const fallbacks = fromEnv?.length ? fromEnv : [...NVIDIA_NIM_FALLBACK_MODELS]
+  return [...new Set([primary, ...fallbacks])]
+}
+
+export function getChatModelForProvider(
+  provider: AiProvider,
+  options?: { nvidiaModel?: string },
+): LanguageModel {
   switch (provider) {
     case 'groq':
       return groq(process.env.GROQ_MODEL ?? GROQ_MODEL)
@@ -74,8 +98,10 @@ export function getChatModelForProvider(provider: AiProvider): LanguageModel {
         (process.env.OPENROUTER_USE_FREE === 'true' ? OPENROUTER_FREE_MODEL : OPENROUTER_MODEL)
       return openrouter(modelId)
     }
-    case 'nvidia':
-      return nvidiaNim(process.env.NVIDIA_NIM_MODEL ?? NVIDIA_NIM_MODEL)
+    case 'nvidia': {
+      const modelId = options?.nvidiaModel ?? process.env.NVIDIA_NIM_MODEL ?? NVIDIA_NIM_MODEL
+      return nvidiaNim(modelId)
+    }
     case 'anthropic':
       return anthropic(process.env.ANTHROPIC_MODEL ?? 'claude-haiku-4-5-20251001')
     default: {
