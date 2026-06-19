@@ -1,5 +1,6 @@
 'use client'
 
+import LionMotif from '@/components/LionMotif'
 import {
   categories,
   getBrowsableByCategory,
@@ -96,9 +97,7 @@ export default function ServiceSidebar({
     <aside className={panelClasses} aria-label="Government services browser">
       <div className="px-4 py-5 border-b border-lk-gold/15 bg-gradient-to-b from-black/25 to-transparent">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xl" aria-hidden>
-            🦁
-          </span>
+          <LionMotif size={28} variant="gold" className="flex-shrink-0" />
           <div>
             <p className="text-xs font-black text-lk-gold-light uppercase tracking-widest">
               Browse Services

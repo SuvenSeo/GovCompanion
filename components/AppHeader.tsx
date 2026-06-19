@@ -1,6 +1,8 @@
 'use client'
 
+import LionMotif from '@/components/LionMotif'
 import LkTricolorBar from '@/components/LkTricolorBar'
+import ThemeToggle from '@/components/ThemeToggle'
 
 interface AppHeaderProps {
   onQuickAsk: (query: string) => void
@@ -56,10 +58,8 @@ export default function AppHeader({
             )}
 
             <div className="flex items-center gap-3 min-w-0">
-              <div className="relative flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-lk-gold/30 to-lk-maroon-light/50 border border-lk-gold/30 flex items-center justify-center shadow-lk-glow animate-float">
-                <span className="text-2xl" aria-hidden>
-                  🇱🇰
-                </span>
+              <div className="relative flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-lk-gold/30 to-lk-maroon-light/50 dark:from-lk-gold/20 dark:to-lk-night-elevated border border-lk-gold/30 flex items-center justify-center shadow-lk-glow animate-float overflow-hidden">
+                <LionMotif size={36} variant="gold" />
               </div>
               <div className="min-w-0">
                 <h1 className="text-lg md:text-xl font-black leading-tight tracking-tight">
@@ -75,8 +75,10 @@ export default function AppHeader({
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-            {OFFICIAL_LINKS.map(({ label, href }) => (
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <ThemeToggle />
+            <div className="hidden md:flex items-center gap-3">
+              {OFFICIAL_LINKS.map(({ label, href }) => (
               <a
                 key={href}
                 href={href}
@@ -88,17 +90,18 @@ export default function AppHeader({
               </a>
             ))}
             <div className="h-4 w-px bg-white/15" />
-            <span className="text-[11px] bg-emerald-500/20 border border-emerald-400/30 px-2.5 py-1 rounded-full text-emerald-100 flex items-center gap-1.5 font-medium">
+            <span className="hidden md:inline text-[11px] bg-emerald-500/20 border border-emerald-400/30 px-2.5 py-1 rounded-full text-emerald-100 flex items-center gap-1.5 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse-soft" />
               Live AI
             </span>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="lk-gold-line" />
 
-      <div className="bg-gradient-to-r from-lk-maroon-dark via-[#3d0a11] to-lk-maroon-dark px-4 md:px-6 py-2.5 flex items-center gap-2 overflow-x-auto scrollbar-none border-b border-lk-gold/10">
+      <div className="bg-gradient-to-r from-lk-maroon-dark via-[#3d0a11] to-lk-maroon-dark dark:from-lk-night dark:via-lk-night-card dark:to-lk-night px-4 md:px-6 py-2.5 flex items-center gap-2 overflow-x-auto scrollbar-none border-b border-lk-gold/10">
         <span className="text-[10px] text-lk-gold font-bold uppercase tracking-widest flex-shrink-0">
           ⚡ Quick ask
         </span>

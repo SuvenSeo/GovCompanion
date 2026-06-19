@@ -124,7 +124,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
 
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
-      <div className="flex items-center justify-between px-4 md:px-8 py-2.5 border-b border-lk-maroon/8 bg-white/60 backdrop-blur-md">
+      <div className="flex items-center justify-between px-4 md:px-8 py-2.5 border-b border-lk-maroon/8 dark:border-lk-gold/10 bg-white/60 dark:bg-lk-night-card/80 backdrop-blur-md transition-colors duration-300">
         <p className="text-xs text-gray-600 hidden sm:flex items-center gap-2">
           <span className="inline-flex items-center gap-1 bg-lk-maroon/5 text-lk-maroon px-2 py-0.5 rounded-full font-medium">
             EN
@@ -232,7 +232,7 @@ const ChatInterface = forwardRef<ChatInterfaceRef>((_, ref) => {
 
       <div
         id="chat-input-area"
-        className="border-t border-lk-gold/20 bg-white/95 backdrop-blur-xl px-4 md:px-8 py-4 shadow-[0_-8px_32px_rgba(74,11,18,0.06)]"
+        className="border-t border-lk-gold/20 dark:border-lk-gold/15 bg-white/95 dark:bg-lk-night-card/95 backdrop-blur-xl px-4 md:px-8 py-4 shadow-[0_-8px_32px_rgba(74,11,18,0.06)] dark:shadow-[0_-8px_32px_rgba(0,0,0,0.3)] transition-colors duration-300"
       >
         <form onSubmit={handleSubmit} className="flex gap-3 items-end max-w-4xl mx-auto">
           <div className="flex-1 relative">

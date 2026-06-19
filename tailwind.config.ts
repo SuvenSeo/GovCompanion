@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
     extend: {
@@ -17,6 +18,9 @@ const config: Config = {
         'lk-saffron': '#FF6B35',
         'lk-cream': '#FFF9F2',
         'lk-sand': '#F5EDE0',
+        'lk-night': '#0f0a0c',
+        'lk-night-card': '#1a1014',
+        'lk-night-elevated': '#24161c',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
@@ -66,6 +70,22 @@ const config: Config = {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
         },
+        'modal-in': {
+          '0%': { opacity: '0', transform: 'scale(0.95) translateY(8px)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
+        'modal-out': {
+          '0%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+          '100%': { opacity: '0', transform: 'scale(0.96) translateY(4px)' },
+        },
+        'hero-collapse': {
+          '0%': { opacity: '1', maxHeight: '500px' },
+          '100%': { opacity: '0', maxHeight: '0' },
+        },
+        'main-expand': {
+          '0%': { opacity: '0.85', transform: 'scale(0.99)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
       },
       animation: {
         'fade-up': 'fade-up 0.45s ease-out forwards',
@@ -77,6 +97,10 @@ const config: Config = {
         float: 'float 3s ease-in-out infinite',
         'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
         'gradient-shift': 'gradient-shift 8s ease infinite',
+        'modal-in': 'modal-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'modal-out': 'modal-out 0.25s ease-in forwards',
+        'hero-collapse': 'hero-collapse 0.45s ease-in forwards',
+        'main-expand': 'main-expand 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
       },
     },
   },
